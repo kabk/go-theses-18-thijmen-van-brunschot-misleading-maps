@@ -1,0 +1,88 @@
+
+
+body {
+    margin: 0px 0px 0px 0px; 
+   	background-color: #f2f6f5;
+   	/*#f2f6f5*/
+
+}
+
+@font-face {
+	font-family: PlantinLight;
+	src: url(fonts/Plantin-Light.otf);
+}
+
+
+div.content {
+	width: 100%;
+	height:100%;
+}
+
+	div.left {
+		float: left;
+		width:50%;
+	}
+
+		div.lefttop {
+			min-height: 50vh;
+			max-height: 50vh;
+			width: 100%;
+			background-color: red;
+			float: top;
+		}
+		div.leftbottom {
+			min-height: 50vh;
+			max-height: 50vh;
+			width: 100%;
+			background-color: blue;
+					float: bottom;
+
+		}
+
+
+	div.right {
+		float:right;
+		width:50%;
+		background-color: pink;
+	}
+
+ 
+@media (max-width:800px) {
+  div.left, div.center, div.right {
+    width:100%; 
+  }
+}
+
+h1 {
+	font-family: PlantinLight, sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 30pt;
+}
+
+h2 {
+	font-family: PlantinLight, sans-serif;
+	text-align: left;
+	text-transform: uppercase;
+	font-size: 30pt;
+	line-height: 15pt;
+}
+
+
+
+
+p {
+	font-family: PlantinLight, serif;
+	font-size: 14.5pt;
+	line-height: 1.32em;
+	padding-bottom: 13px;
+}
+
+
+@page { right-margin: 2cm;  top-margin: 2cm;margin-bottom: 2cm;left-margin: 3cm }
+
+@media print {
+  h2 { display: none; }
+  p { font-size: 14px; }
+}
+
