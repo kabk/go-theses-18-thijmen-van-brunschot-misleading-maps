@@ -2,7 +2,7 @@
 
 body {
     margin: 0px 0px 0px 0px; 
-   	background-color: #f2f6f5;
+   	background-color: transparent;
    	/*#f2f6f5*/
 
 }
@@ -27,14 +27,14 @@ div.content {
 			min-height: 50vh;
 			max-height: 50vh;
 			width: 100%;
-			background-color: red;
+			background-color: grey;
 			float: top;
 		}
 		div.leftbottom {
 			min-height: 50vh;
 			max-height: 50vh;
 			width: 100%;
-			background-color: blue;
+			background-color: white;
 					float: bottom;
 
 		}
@@ -43,7 +43,7 @@ div.content {
 	div.right {
 		float:right;
 		width:50%;
-		background-color: pink;
+		background-color: lightgrey;
 	}
 
  
