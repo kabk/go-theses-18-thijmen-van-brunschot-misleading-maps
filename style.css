@@ -11,6 +11,11 @@ body {
 	font-family: PlantinLight;
 	src: url(fonts/Plantin-Light.otf);
 }
+@font-face {
+	font-family: TTTravels;
+	src: url(fonts/TypeType - TT Travels Bold.otf);
+}
+
 
 
 div.content {
@@ -20,30 +25,39 @@ div.content {
 
 	div.left {
 		float: left;
-		width:50%;
+		width:50vw;		
 	}
 
 		div.lefttop {
 			min-height: 50vh;
 			max-height: 50vh;
-			width: 100%;
+			width: 46vw;
 			background-color: grey;
 			float: top;
+			padding-left:2vw;
+			padding-right:2vw; 
 		}
 		div.leftbottom {
 			min-height: 50vh;
 			max-height: 50vh;
-			width: 100%;
+			width: 46vw;
 			background-color: white;
-					float: bottom;
+			float: bottom;
 
 		}
 
 
 	div.right {
 		float:right;
-		width:50%;
+		width:46vw;
+		height:100vh;
+		max-height: 100vh;
+		min-height: 100vh;
+
 		background-color: lightgrey;
+		padding-left:2vw;
+		padding-right:2vw; 
+
 	}
 
  
@@ -61,15 +75,12 @@ h1 {
 }
 
 h2 {
-	font-family: PlantinLight, sans-serif;
+	font-family: TTTravels, sans-serif;
 	text-align: left;
-	text-transform: uppercase;
+	color: blue;
 	font-size: 30pt;
 	line-height: 15pt;
 }
-
-
-
 
 p {
 	font-family: PlantinLight, serif;
