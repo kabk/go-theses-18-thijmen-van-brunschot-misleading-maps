@@ -1,0 +1,38 @@
+Deciding the margins
+
+@page {
+	margin-top:7cm;
+	margin-bottom:2cm;
+}
+
+@page:left {
+	margin-top:7cm;
+	margin-bottom:2cm;
+	margin-left:2cm;
+	margin-right:3cm;
+}
+
+@page:left {
+	margin-top:7cm;
+	margin-bottom:2cm;
+	margin-left:3cm;
+	margin-right:2cm;
+}
+
+@media print {
+	
+}
+
+page-break-after
+
+puts a page break before the chapter. 
+
+div.chapter {
+	page-break-before: always;
+}
+
+basically avoid page breaks in running text
+
+p {
+	page-break-inside:avoid;
+}
