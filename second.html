@@ -1,159 +1,1343 @@
 <html>
 	<head>
-		 <meta charset="utf-8">
+		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="second.css">
+
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i|EB+Garamond:400,400i,500,500i|Libre+Baskerville:400,400i|Merriweather:300,300i,400,400i|PT+Serif:400,400i" rel="stylesheet">
 		<style>
-		 	@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,400i|EB+Garamond:400,400i,500,500i|Libre+Baskerville:400,400i|Merriweather:300,300i,400,400i|PT+Serif:400,400i');
+			@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,400i|EB+Garamond:400,400i,500,500i|Libre+Baskerville:400,400i|Merriweather:300,300i,400,400i|PT+Serif:400,400i');
 		</style> 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js'></script> -->
-
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js'></script> 
+		<script src='js/smoothscroll.js'></script> 
 		
- 
 	</head>
 
 	<body>
 		<div class="content">
-
 			<div class="header">
-				
-				<div class="headerleft">
-					
-				</div>
-				
-				<div class="headerright">
-				
-					<div class="hdrrght_left">
-						<h1>Introductie</h1>
-					</div>
-					
-					<div class="hdrrght_right">
-						<p class="prntbttn">
-							<a class="prntbttn" href="javascript:window.print()">
-								Print
-							</a>
-						</p>
-					</div>
-				
-
-
-
-
-
-
-
-				</div>
-		
+				<div id="pagebreak"></div>
+				<h1 id="chapterTitle">Vooringenomen Cartografie</h1>
+				<p class="prntbttn"><a class="prntbttn" href="javascript:window.print()">Print</a></p>
 			</div>
 
-			<div class="imagezoombox">
+			<div class="tableofcontent">
+				<p class="textcontent">
+					<a class="headline" href="#leeswijzer">↪Leeswijzer</a></br>
+					<a class="headline" href="#inleiding">↪Inleiding</a></br>
+					<a class="headline" href="#vooringenomenkaarten">↪1. Vooringenomen kaarten</a></br>
+					<a class="headline" href="#2">↪2.Soorten cartografen</a></br>
 
-				<div class="tableofcontent">
-						<p class="textcontent">
-							<a class="headline" href="#intro">↪1.Inleiding</a>
-							<a class="otherchapter" href="#placholder">1.1 Title</a>
-							<a class="otherchapter" href="#placholder">1.2 Title</a>
-							<a class="otherchapter" href="#placholder">1.3 Title</a>
-							</br>
-							<a class="headline" href="#placholder">↳2.Cartografisch voorbeelden</a>
-							<a class="otherchapter" href="#placholder">2.1 Title</a>
-							<a class="otherchapter" href="#placholder">2.2 Title</a>
-							<a class="otherchapter" href="#placholder">2.3 Title</a>
-							</br>
-							<a class="headline" href="#placholder">↳3.Wie is een moderne kaartenmaker?</a>
-							<a class="otherchapter" href="#placholder">3.1 Inleiding cartografische ontwikkelingen</a>
-							<a class="otherchapter" href="#placholder">3.2 Geografische Informatie Systemen</a>
-							<a class="otherchapter" href="#placholder">3.3 De cartograaf</a>
-							<a class="otherchapter" href="#placholder">3.4 De (moderne) kaartenmaker</a>
-							<a class="otherchapter" href="#placholder">3.5 De grafisch ontwerper</a>
-							<a class="otherchapter" href="#placholder">3.6 Media: Dynamische Informatie Maatschappij</a>
-							</br>
-							<a class="headline" href="#placholder">↪4.Hoe lever je kritiek [critique]?</a>
-							<a class="otherchapter" href="#placholder">4.1 Wat is een (cartografische) critique?</a>
-							</br>
-							<a class="headline" href="#6">↪5.Conclusie</a>
-							<a class="headline" href="#6">↪6.Bibliography</a>
-						</p>
-				</div>
+					<a class="otherchapter" href="#2.1">↪2.1 Technologische ontwikkelingen</a></br>
+					<a class="otherchapter" href="#2.2">↪2.2 Verschillende kaartenmakers</a></br>
+					<a class="otherchapter" href="#2.2.1">↪2.2.1 De cartograaf</a></br>
+					<a class="otherchapter" href="#2.2.2">↪2.2.2 De (moderne) kaartenmaker</a></br>
+					<a class="otherchapter" href="#2.2.3">↪2.2.3 De grafisch ontwerper</a></br>
+					<a class="otherchapter" href="#2.3">↪2.3 Dynamische Informatiemaatschappij</a></br>
+					
+					<a class="headline" href="#3">↪3.Critique</a></br>
+					<a class="otherchapter" href="#3.1">↪3.1 Critique</a></br>
+					<a class="otherchapter" href="#3.1">↪3.2 Een cartografische critique</a></br>
+					<a class="otherchapter" href="#3.1">↪3.3 Critique leveren</a></br>
+					
+					<a class="headline" href="#4">↪4.Conclusie</a></br>
+					<a class="headline" href="#5">↪5.Bijlage</a></br>
+					
+					<a class="headline" href="#6">↪6.Bibliografie</a>
+				</p>
 			</div>
-					<!-- <img class="imageweb" src="image/khalifah.jpg"></br> -->
-					
-
-					<!-- <img class="imageweb"  src="image/Portugal is Not A Small Country Duotone.jpg"> -->
-<!-- 
-color
-Hizb_Al_Tahrirs_presence_worldwide.jpg
-
-duutone
-Portugal is Not A Small Country Duotone.jpg
-
-color
-Galvão, Henrique 1895-1970 Portugal is Not A Small Country.jpg 
--->
-
-
-					
-				
-
 
 			<div class="maintextbox">
-				<h1 id="intro"><a name="1">Introductie</a></h1>
-				<p>Begin november in 2010 had Nicaraguaans ambtenaar Edén Pastora de taak een deel van de rivier Rio San Juan droog te baggeren. Dit gebied grenst aan het buurland Costa Rica. Bij het uitzoeken van het droog te leggen gebied, en dus de landsgrenzen, gebruikte en refereerde hij de informatie van Google Maps om te beargumenteren dat het Nicaraguaans grondgebied was. <i><span class="quote">“See Google’s satellite photo, and there you see the border.”</i><a href="#fn1"><sup><span class="footnote">1</span></sup></a></p><p>Later bleek dat dit Costa Ricaans grondgebied was, en dat de online atlas de landsgrenzen verkeerd aangaf. De ‘verschoven’ landgrens verschilde enkele vierkant kilometers met de werkelijkheid. Uiteindelijk resulteerde de keuze van E. Pastora voor politiek conflict en de verhoogde gespannen situatie tussen Nicaragua en Costa Rica. Desalniettemin droeg de (niet)aanduiding van landsgrenzen door Google daar natuurlijk ook indirect aan bij.</p>
-
-				<p>Hoewel de gemoederen hoog opliepen en menig excuus werd gemaakt en het met een sisser afliep, 
-					<img class="imageweb imageleft" src="image/Portugal is Not A Small Country Duotone.jpg">
-					<span class="caption textleft" style="color:#e45b51;">Galvão, Henrique (1934). <i>Portugal N'est Pas Un Petit Pays (Portugal is Not A Small Country).</i> Persuasive Maps: PJ Mode Collection.</span>
-					<span class="argument">laat het wel duidelijk zien dat kaartenmakers en platformen die kaarten aanbieden de nodige verantwoordelijkheid moeten uitoefenen in hun praktijk.</span> Het publiek neemt gepubliceerde informatie vrij snel als waar aan. Zo positioneert de lezer zich kwetsbaar en dus beïnvloedbaar.</p>
-				<p>Cartografie is een werkveld waar keuzes gemaakt worden waar <span class="achtergrondkleur"> lezers grote en gevoelige meningen door vormen.</span> <span class="underline"> Wanneer cartografen keuzes maken, beïnvloeden ze de interpretatie van de kaart</span>, en hierdoor kunnen meningen en dus standpunten en overtuigingen van lezers beïnvloed worden en nodig emotie teweeg brengen. Wanneer het publiek, en minderheid of een groep mensen van mening verschilt met de staat, of een andere groep mensen kunnen ze er voor kiezen te protesteren en hun mening verspreiden. Dit kan uitmonden in gevaarlijke protesten waarbij meerdere partijen gewonden raken. Volgens mij hoef ik hier geen voorbeelden te geven.</p>
-				<p>Veel internationale nieuwskanalen kwamen met krantenkoppen zoals ‘The First Google Maps War - The New York Times’<a href="#fn2"><sup><span class="footnote">2</span></sup></a>, ’21st Century War: Google Maps Error Leads to Nicaraguan Invasion’<sup><span class="footnote">3</span></sup>, ‘Google maps error sparks invasion of Costa Rica by Nicaragua’<sup><span class="footnote">4</span></sup>, en ‘Google Nicaraguan map error threatens to escalate into regional dispute’.<sup><span class="footnote">5</span></sup></p>
-				<p>In dit onderzoek is gezocht naar een antwoord <img class="imageweb imageleft" src="image/khalifah.jpg"><span class="caption textleft" style="color:cyan;"><i>Hizb Al Tahrirs presence worldwide</i> Photo: Source.</span>op de vraag: ‘Hoe beïnvloeden grafische elementen op kaarten de interpretatie van de lezer, en wat kunnen we hier tegen beginnen?’. Hiervoor is een kwalitatief onderzoek uitgevoerd naar uitéénlopende type kaarten en hun voornaamste grafische elementen en hoe deze de interpretatie van de lezer kunnen beïnvloeden.</p>
-
-				<h1><a name="5">Conclusie</a></h1>
-				<p>In dit onderzoek is gezocht naar een antwoord op de vraag: ‘Hoe beïnvloeden grafische elementen op kaarten de interpretatie van de lezer, en wat kunnen we hier tegen beginnen?’. Hiervoor is een kwalitatief onderzoek uitgevoerd naar uitéénlopende type kaarten en hun voornaamste grafische elementen en hoe deze de interpretatie van de lezer kunnen beïnvloeden.</p>
-				<p>Uit het onderzoek is gebleken dat projecties veelvuldig zijn gebruikt om het verhaal van de kaart te <span id='whatever'>versterken.</span> Daarnaast is gebleken dat verschillende projecties uitéénlopende karakteristieken hebben met sociale en maatschappelijke consequenties. Ook is gebleken dat we niet kunnen ontspannen aan die voor- en nadelen van die projecties, en we dus een doordachte keuze moeten maken die aansluit bij het narratief van de kaart.</p>
+				<h1><a id="title" name="1">Vooringenomen cartografie</a></h1>
+				
+				<div class="blnc_height">
+				</div>
+				<div class="about">
+					<p>Thijmen van Brunschot, Bachelor Grafische Ontwerp Thesis.</br>
+					Koninklijke Academie van Beeldende Kunsten Den Haag. 2018</p>
+				</div>
 
 
+				<h1><a id="leeswijzer" name="1">Leeswijzer</a></h1>
+				</br></br></br></br>
 
-				<h1><a name="6">Bibliography</a></h1>
+				<p><span class="wegwijzer">In hoofdstuk 1 wordt in kaart gebracht welke grafische keuzes cartografen maken en hoe deze keuzes lezers kunnen beïnvloeden, door een aantal kaarten te analyseren. Dit gebeurt aan de hand van de voornaamste (grafische) elementen: projecties, kleuren, kleurencombinaties, tekst, beelden, symbolen, posturen en accessoires. In hoofdstuk 2 wordt beschreven wie cartografische keuzes maken en hoe deze keuzes worden gemaakt. Dit wordt gedaan aan de hand van een kort overzicht van cartografische (technologische) ontwikkelingen. In hoofdstuk 3 komt aan bod hoe cartografen en kaartenmakers beter en bewuster cartografische keuzes kunnen maken. In hoofdstuk 4 volgt de conclusie. Hier wordt antwoord gegeven op de hoofdvragen. Vervolgens worden er aanbevelingen gedaan.</span></p>
 
-				<p class="bibliography">
-					<sup>
-						<span id="fn1" class="footnote">
-							1
-					</sup>
-					 Edén Pastora, (3 november 2010). 
-					 <i>
-					 	La draga la financia el ALBA en Venezuela.
-					 </i>
-					  Toegang op 23 oktober 2017 via 
-					  <u>
-					  	http://www.nacion.com/archivo/draga-financia-ALBA-Venezuela_0_1156884440.html
-					  </u>
-					 	</span>
 
-				</br></br>
+				<h1><a id="inleiding" name="1">Inleiding</a></h1>
+				</br></br></br></br>
 
-				<sup><span id="fn2" class="footnote">2</sup> Harley, J. B. (1989). <i>Deconstructing the Map. Reprinted from Cartographica.</i> V. 26, n. 2 (Spring 1989). Via Michigan Publishing, University of Michigan Library. Toegang op 5 december 2017 via <u>http://hdl.handle.net/2027/spo.4761530.0003.008</u></span>
+
+
+				<p>Geografische kaarten zijn voor veel mensen simpelweg een objectieve weergave van de werkelijkheid. Schijn bedriegt. Kaarten zijn inherent politiek en altijd verbonden met macht.</p>
+
+					<img class="imageprint" src="image/afb1.jpg">
+					<img class="imageweb imageleft" src="image/afb1duo.jpg" onMouseOver="this.src='image/afb1.jpg'" onMouseOut="this.src='image/afb1duo.jpg'"/>
+					<span class="caption textleft">Nicaraguan troops planted a flag on Costa Rica's Calero Island [foto]. (z.j.). Geraadpleegd van http://www.telegraph.co.uk/news/worldnews/centralamericaandthecaribbean/nicaragua/8117902/Google-maps-error-sparks-invasion-of-Costa-Rica-by-Nicaragua.html</span>
+
+				<p>Begin november <span class="jaar">2010</span> had <span class="country">Nicaraguaans</span> ambtenaar <span class="persoon">Edén Pastora</span> de taak een deel van de rivier Rio San Juan droog te baggeren. Het droog te leggen gebied grensde aan het buurland <span class="country">Costa Rica</span>. Om te zien waar de landgrens liep, <span class="praktisch">gebruikte Pastora Google Maps:</span> <span class="regQuote">“See Google’s satellite photo, and there you see the border.”</span>
+					<a href="#footnotes"><span class="footnote"></span></a>
+				</p>
+
+				<p>Internationale omroepen zoals <span class="bedrijf">The New York Times</span> en <span class="bedrijf">The Guardian</span> beschreven dat een fout van <span class="bedrijf">Google Maps</span> leidde tot een escalerende situatie, een <span class="country">Nicaraguaanse</span> invasie in <span class="country">Costa Rica</span> en een eerste <span class="gebeurtenis">‘Google Maps Oorlog’</span>.
+					<a href="#footnotes"><span class="footnote"></span></a>
+					<a href="#footnotes"><span class="footnote"></span></a>
 				</p>
 
 
+					<img class="imageprint" src="image/afb2.png">
+					<img class="imageweb imageleft" src="image/afb2 mono.png" onMouseOver="this.src='image/afb2.png'" onMouseOut="this.src='image/afb2 mono.png'"/>
+					<span class="caption textleft">James. (2011, 4 april). Here’s a before and after [beeld compilatie]. Geraadpleegd van http://maptd.com/country-borders-redrawn-in-google-maps/</span>
+
+
+
+				<p>Later bleek dat de online atlas de landgrenzen enkele kilometers verkeerd aangaf, en dat ze ten dele op <span class="country">Costa Ricaans</span> grondgebied bezig waren. De situatie tussen <span class="country">Nicaragua</span> en <span class="country">Costa Rica</span> was al gespannen; de kaartkeuze van <span class="persoon">E. Pastora</span> verhitte het politiek conflict.</p>
+
+				<p>In aardrijkskundige kaarten zit veel macht verstopt.<a href="#footnotes"><span class="footnote"></span></a>
+					 De neiging van de mens om de kaart te zien als een neutrale, wetenschappelijke weergave van de werkelijkheid, zorgt er voor dat kaarten eenvoudig misbruikt kunnen worden voor nationalistische en propagandistische doeleinden.
+					<a href="#footnotes"><span class="footnote"></span></a>
+				</p>
+				<p>Cartografie is een werkveld waar keuzes gemaakt worden. Wanneer cartografen keuzes maken, beïnvloeden ze de interpretatie van de kaart, en hierdoor kunnen meningen en dus standpunten en overtuigingen van lezers beïnvloed worden. Dit kan ernstige gevolgen kan hebben.</p>
+				<p>De situatie tussen <span class="country">Nicaragua</span> and <span class="country">Costa Rica</span> liep gelukkig met een sisser af. Dit voorbeeld laat duidelijk zien dat kaartenmakers en organisaties die kaarten aanbieden, de nodige verantwoordelijkheid hebben. Het publiek neemt officiële en officieuze informatie snel voor waar aan. De lezer positioneert hierdoor kwetsbaar en dus beïnvloedbaar.</p>
+
+					<img class="imageprint" src="image/afb3.png">
+					<img class="imageweb imageleft" src="image/afb3 mono.png" onMouseOver="this.src='image/afb3.png'" onMouseOut="this.src='image/afb3 mono.png'"/>
+					<span class="caption textleft">The Economist. (2014, 4 september). How Google represents disputed borders between countries [beeld compilatie]. Geraadpleegd van https://www.economist.com/blogs/economist-explains/2014/09/economist-explains-1</span>
+
+
+				<p>Geografische kaarten die zoekmachines zoals <span class="bedrijf">Google</span>, <span class="bedrijf">Bing</span> en <span class="bedrijf">Yahoo</span> hanteren, hebben verschillende politieke en nationale belangen. Het politieke spektakel tussen <span class="country">Nicaragua</span> en <span class="country">Costa Rica</span> ontstond doordat <span class="bedrijf">Google</span> de grens verkeerd aangaf, en daarop gebaseerd keuzes zijn gemaakt. Anderzijds kunnen zulke organisaties ook voor keuzes worden gezet door de verschillende perspectieven over territoriale disputen. Een voorbeeld hiervan is het schiereiland <span class="city">De Krim</span>, dat zowel door <span class="country">Rusland</span> als <span class="country">Oekraïne</span> wordt geclaimd. <span class="bedrijf">Google</span> werd genoodzaakt <span class="city">De Krim</span> in <span class="country">Rusland</span> als Russische grondgebied te vertonen.</p>
+				<p>Deze scriptie gaat over vooringenomen cartografie en de effecten die keuzes van cartografen hebben op de interpretatie van lezers. Er wordt gezocht naar antwoorden op de onderzoeksvragen: <i>‘Welke grafische keuzes maken cartografen (bewust of onbewust)?’</i>, <i>‘Wat kunnen deze keuzes voor nadelige effecten hebben?’</i> en <i>‘Kunnen cartografen daar iets tegen doen?’</i>. Om deze onderzoeksvragen te beantwoorden is literatuur onderzoek gedaan en zijn verschillende aardrijkskundige kaarten onderzocht (case studies).</p>	
+					
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+
+
+
+				<h1><a id="vooringenomencartografie" name="1">Vooringenomen kaarten</a></h1>
+				</br></br></br></br></br></br></br>
+
+
+				<p><span class="wegwijzer">Om antwoord te kunnen geven op de eerste hoofdvraag, wordt in dit hoofdstuk in kaart gebracht welke grafische keuzes cartografen maken door een aantal kaarten te analyseren. Dit gebeurt aan de hand van de voornaamste (grafische) elementen: projecties, kleuren, kleurencombinaties, tekst, beelden, symbolen, posturen en accessoires. Daarnaast wordt er ook gekeken naar de positie van de maker en de bronvermelding. Ook is er aandacht voor interne psychologische processen die de interpretatie van kaarten beïnvloeden bij de lezer.</span></p>
+
+				<p>Voordat een kaart gemaakt kan worden, moet een projectie worden gekozen. Projecties zijn wiskundige berekeningen die breedte- en lengtegraden van, in dit geval het bolvormig object de aarde, berekenen naar een rechthoekig oppervlakte, de kaart. Een kaart wordt door de <span class="bedrijf">Van Dale</span> beschreven als <span class="regQuote">“blad met een schematische, verkleinde voorstelling van de aarde of een deel daarvan, van een zee met haar ondiepten, stromingen enz of van de hemel, hetzij als blad op zichzelf of als deel van een boek met kaarten, een atlas (bij steden spreekt men gewoonlijk van een plattegrond).”</span>
+					<a href="#footnotes"><span class="footnote"></span></a>
+				</p>
+
+				<p>Er zijn verschillende wiskundige manieren om deze projecties te berekenen. Omdat de aarde geen perfect bolvorm heeft, is het wiskundig gezien onmogelijk om deze te berekenen naar een tweedimensionaal oppervlakte. Een cartograaf kiest welke ‘vervormde' weergave hij gebruikt voor zijn kaart. De projectiekeuze is een eerste voorbeeld van een cartografische keuze. Projecties verschillen wat betreft objectiviteit, vooringenomenheid, afstandsgetrouwheid, relatieve grootte en hoeksgetrouwheid (zie Bijlage 1 voor meer informatie).</p>
+
+				<p><span class="persoon">Mulcahy & Clarke</span> beschreven in <span class="jaar">2001</span> dat de projectiekeuze tegenwoordig dilemmas meebrengt. <span class="regQuote">“Democratization of the access and use of spatial data has brought the projection issue to the forefront because important decisions are often based upon spatial information.”</span>
+					<a href="#footnotes"><span class="footnote"></span></a>
+				</p>
+
+
+
+				<h2>Future Caliphate Imagined</h2>
+				<img class="imageprint" src="image/Hizb_Al_Tahrirs_presence_worldwide.png">
+				<img class="imageweb imageleft" src="image/khalifah.png" onMouseOver="this.src='image/Hizb_Al_Tahrirs_presence_worldwide.png'" onMouseOut="this.src='image/khalifah.png'"/>
+				<span class="caption textleft">Future Caliphate Imagined by Hizb ut-Tahrir [propaganda kaart]. (z.j.). Geraadpleegd van http://www.geocurrents.info/geopolitics/self-declared-states-geopolitics/islamic-states-aspirational-map</span>
+
+				<p>De internationale islamitische organisatie <span class="bedrijf">Hizb ut-Tahrir</span> heeft deze kaart gemaakt en geeft hun waarneming van de wereld weer. De kaart gaat op internet gepaard met een beschrijvende tekst dat de wereld verdeeld is in <span class="country">‘het land van ongelovige’</span> (Dar Al-Kufr) en het <span class="country">‘land van de Islam’</span> (Dar al-Islam). De organisatie beweerde dat de hele wereld onder <span class="country">‘het land van ongelovige’</span> valt, omdat geen enkel land aan criteria voor een <span class="country">islamitische staat</span> voldoet.
+				<a href="#footnotes"><span class="footnote"></span></a>
+				</br>
+				Op internet zijn verschillende weergaves van utopische kalifaten te vinden. Bij veel van zulke kaarten wordt het kalifaat <span class="kleur">zwart</span> gemarkeerd. Dat maakt het opmerkelijk dat bij deze kaart gekozen is om de kleur <span class="kleur">blauw</span> te gebruiken voor de markering van het kalifaat en <span class="kleur">zwart</span> voor de overige landen (het land van ongelovige).</p>
+
+				<p>De kleurwaarden van <span class="kleur">blauw</span> en <span class="kleur">zwart</span> verschillen behoorlijk. <span class="kleur">Zwart</span> wordt in het westen geassocieerd met mysterie, ongeluk, ziekte, droefheid en dood. <span class="kleur">Blauw</span> heeft daarentegen associaties met stabiliteit, vertrouwen, loyaliteit en wijsheid. R. Holmes schrijft dat <span class="kleur">blauw</span> vanwege vroegere schaarste associaties met goddelijkheid en de rijken heeft. <span class="kleur">Blauw</span> wordt door veel culturen geassocieerd met hoge kwaliteit en geloofwaardigheid.<a href="#footnotes"><span class="footnote"></span></a>
+				Anderzijds verschillen associaties met <span class="kleur">blauw</span>. In China is <span class="kleur">blauw</span> symbool voor onsterfelijkheid. In westerse landen staat <span class="kleur">blauw</span> symbool voor geloof en is het stereotype mannelijk.<a href="#footnotes"><span class="footnote"></span></a>
+				De expressieve waarden van <span class="kleur">blauw</span> is dat het koud aanvoelt, altijd passief is en introvert werkt.<a href="#footnotes"><span class="footnote"></span></a>
+				Omdat de meeste mensen bekend zijn met het begrip kalifaat, begrijpen ze welk gebied het kalifaat weergeeft,  ondanks dat er een andere kleur wordt gebruikt dan gebruikelijk is. Het is de vraag hoe de kaart geïnterpreteerd zou worden als de context onbekend is? Zou het beeld dat mensen hebben van het begrip kalifaat veranderen door de kleur <span class="kleur">blauw</span> te gebruiken die geassocieerd wordt met geloofwaardigheid en stabiliteit.</p>
+
+				<p>Omdat er op deze kaart geen informatie staat over landsgrenzen, plaatsnamen en lengte- en breedtegraden is deze kaart niet bruikbaar als instrument voor navigatie. De kaart geeft de utopische visie van <span class="bedrijf">Hizb ut-Tahrir's</span> kalifaat weer. Hierdoor wordt de suggestie gewekt dat deze kaart propagandistische doeleinden heeft.</p>
+
+
+
+
+				<h2>The Octopus Repressing The British Empire</h2>
+				<img class="imageprint" src="image/octopus.png"><img class="imageweb imageleft" src="image/octopus.png" onMouseOver="this.src='image/octopus.png'" onMouseOut="this.src='image/octopus.png'"/>
+				<span class="caption textleft">The Octopus Representing the British Empire [Nazi propaganda kaart]. (z.j.). Origineel formaat: 9.8 x 16.9 cm</span>
+
+				<p>Op de kaart <span class="kaart">‘The Octopus Repressing The British Empire’</span> wordt een octopus weergegeven die land- en plaatsnamen in zijn tentakels vasthoudt. <span class="persoon">J. A. Tyner</span> stelt in <span class="jaar">2015</span> dat elementen op vooringenomen kaarten vaak eenvoudig te interpreteren zijn en dat juist deze individual point symbols subjectieve kaarten van objectieve kaarten doet onderscheiden. Daarnaast wordt beschreven dat suggestieve symbolen — zoals een schaduw of omcirkeling — bedreigende situaties aangeven zoals een schaduw van het fascisme of een omcirkeling van land door haar vijanden. Symbolen als octopussen, haaien of tanks werden vanaf <span class="jaar">1870</span> voor het eerst gebruikt op kaarten. Naast deze statische symbolen werden er ook dynamische symbolen, zoals ontploffingen en pijlen gebruikt.<a href="#footnotes"><span class="footnote"></span></a> 
+				Dynamische symbolen sturen directer aan op beweging of actie en werden daarom veel gebruikt op subjectieve kaarten in de twintigste eeuw.</p>
+
+				<p>Zoals de titel hint, werd het <span class="country">Britse Koninkrijk</span> in <span class="jaar">1942</span> door Nazi’s op deze kaart verbeeld als octopus, die met zijn tentakels zijn koloniale gebieden vasthoudt. De propaganda van de <span class="country">Duitsers</span> kaatst tegenlicht op hun vijand door hun koloniale gebieden te bekritiseren. Omdat de kaart alleen <span class="country">Britse koloniale gebieden</span> laat zien en geen <span class="country">Duitse</span>, heeft de kaart een eenzijdige boodschap over de destijdse geopolitieke situatie.</p>
+
+
+
+
+				<h2>Leo Belgicus</h2>
+				<img class="imageprint" src="image/Leo Belgicus.jpg"><img class="imageweb imageleft" src="image/Leo Belgicus mono.jpg" onMouseOver="this.src='image/Leo Belgicus.jpg'" onMouseOut="this.src='image/Leo Belgicus mono.jpg'"/>
+				<span class="caption textleft">Famiano, S. (1648). Novus XVII. Inferioris Germaniæ Provinciarum [Kaart]. Geraadpleegd van https://digital.library.cornell.edu/catalog/ss:3293726</span>
+				
+				<p>Naast symbolen worden op kaarten ook dieren, planten en mensen gebruikt in de vorm van een gebied om de boodschap van de kaart te versterken. Op de kaart <span class="kaart">Leo Belgicus</span> wordt het lichaam van een leeuw gebruikt om de lage landen te verbeelden. De leeuw werd door cartografen in verschillende houdingen en gelaatsuitdrukkingen, meestal brullend en zittend, afgebeeld. De eerste <span class="kaart">Leo Belgicus</span> is geproduceerd door <span class="cartograaf">Michael Eitzinger</span> in <span class="jaar">1583</span> ten tijden van de <span class="gebeurtenis">Tachtigjarige Oorlog</span>.</p>
+
+				<p><span class="persoon">Van der Heijden</span> beschrijft in zijn boek <span class="titlereference">‘Leo Belgicus. An illustrated and annotated carto-bibliography’</span> dat op alle versies van kaarten de positie van de leeuw iets verschilt. Zo verandert bijvoorbeeld zijn kijkrichting, zijn houding en de positie van zijn kop. <span class="persoon">Van der Heijden</span> stelt dat de houdingen van de leeuwen verschillende momenten en visies van dit conflict weergeven. Op één van de kaarten heeft de leeuw met zijn linkerpoot een zwaard-achtig wapen vast. Volgens <span class="persoon">van der Heijden</span> staat dit voor het <span class="country">Spaanse</span> gevaar dat uit <span class="country">Zuid-Nederland</span> en later <span class="country">Frankrijk</span> kwam. De zittende rustende leeuw beeldt bijvoorbeeld uit dat buurlanden gelijkgezind zijn en dat vrede heerst. De leeuw hoeft niet in actie te komen.<a href="#footnotes"><span class="footnote"></span></a>
+				</p>
+
+				<p>Daarnaast stelde <span class="persoon">van der Heijden</span> dat het papierformaat ook een belangrijke keuze is voor deze kaart. Sinds de zestiende en begin zeventiende eeuw werden kaarten onder andere gedrukt op het goedkopere en handzamere papierformaat Folio, waardoor kaarten in aanraking kwamen met een groter publiek. De kaart werd gebruikt om nationale waarden door te geven en historisch en politiek bewustzijn te stimuleren. Toen de <span class="country">Nederlandse Republiek</span> werd gesticht werd, kreeg de leeuw kracht, heerschappij en onafhankelijkheid als betekenis.<a href="#footnotes"><span class="footnote"></span></a>
+				</p>
+
+
+
+
+				<h2>Europa Regina</h2>
+				<img class="imageprint" src="image/EuropaRegina.png"><img class="imageweb imageleft" src="image/EuropaRegina.png" onMouseOver="this.src='image/EuropaRegina.png'" onMouseOut="this.src='image/EuropaRegina.png'"/>
+				<span class="caption textleft">Johannes, P. (1537, originele Parijse editie). Europa Regina [Kaart]. Geraadpleegd van http://journals.openedition.org/belgeo/7711</span>
+
+				<p>De originele Parijse versie van <span class="kaart">Europa Regina</span> dateert uit <span class="jaar">1537</span> en is gemaakt door <span class="cartograaf">Johannes Putsch</span>. De kaart behoort tot de antropomorfische kaarten. Er wordt hier een menselijk figuur gebruikt voor de afbakening van territorium.<a href="#footnotes"><span class="footnote"></span></a>
+				De kaart verbeeldt het continent <span class="country">Europa</span> zoals we dat nu kennen, maar dan een kwartslag naar rechts gedraaid. <span class="country">Europa</span> is afgebeeld in de vorm van een koningin. Verschillende <span class="country">Europese landen</span> hebben hun eigen plek in en om haar lichaam. Op de kaart houdt <span class="country">Denemarken</span> een schepter vast en houdt <span class="city">Sicilie</span> een keizerlijke orb vast. Beide accessoires zijn bekende machtssymbolen en worden gezien als objecten die ‘de wereld bezitten’. Haar houding en de posities van omringende landen zijn expressief.</p>
+				<p><span class="persoon">Peter Meurer</span> beschreef in zijn artikel <span class="titlereference">‘Europa Regina 16th century maps of Europe in the form of a queen’</span> dat de kaart refereert aan het gedicht <span class="titlereference">‘Europa lamentans’</span>, geschreven door <span class="persoon">Putsch</span>. Dit gedicht gaat over een rouwend <span class="country">Europa</span> dat <span class="persoon">Charles V</span> en <span class="persoon">Ferdinand I</span> aanspreekt. De vrouwelijke stem in het gedicht beklaagt zich over haar onzekere toekomst en dat van de aarde. Haar beklag komt overeen met <span class="persoon">Ceasars</span> campagne <span class="gebeurtenis">‘Civil War’</span> uit <span class="jaar">49-45 v. Chr.</span> tegen zijn eigen volk. Het gedicht eindigt met een angstige kreet waar zij (Europa) alleen eindigt als vrouwelijk offer aan de <span class="country">Tartaren</span> en <span class="country">Turken</span>. Tegelijk wordt zij geplaagd door <span class="country">Engeland</span> en is alleen <span class="country">Duitsland</span> bewapend tegen de vijanden.<a href="#footnotes"><span class="footnote"></span></a> Dit onderbouwt waarom de omringende landen zo zijn afgebeeld. Zo zijn de <span class="country">Britse eilanden</span> weergegeven als gigantische landmassa’s die haar schouder en hoofd bedreigen. Op de borst van de koningin, <span class="country">Duits grondgebied</span>, staat een schild afgebeeld voor sterke verdediging. Met deze kaart verheerlijkte <span class="persoon">Putsch</span> <span class="country">Het Huis Habsburg</span>, dat destijds een belangrijk <span class="country">Europees</span> vorstengeslacht was.<a href="#footnotes"><span class="footnote"></span></a> <span class="persoon">PJ Mode</span> van de <span class="bedrijf">PJ Mode Collection</span> is van mening dat de meeste versies van <span class="kaart">‘Europa Regina’</span> niet persuasive zijn met uitzondering van deze versie. Hij zegt dat deze kaart: <span class="regQuote">“… may be at least in part intended to influence opinions or beliefs”</span> (persoonlijke communicatie, 1 september 2017).</p>
+
+
+
+				<h2>Imperial Federation Map of the World</h2>
+				<img class="imageprint" src="image/Imperial Federation Map of the World.jpg"><img class="imageweb imageleft" src="image/Imperial Federation Map of the World mono.jpg" onMouseOver="this.src='image/Imperial Federation Map of the World.jpg'" onMouseOut="this.src='image/Imperial Federation Map of the World mono.jpg'"/>
+				<span class="caption textleft">Crane, W. (1886). Imperial Federation Map of the World [Kaart]. Geraadpleegd van https://digital.library.cornell.edu/catalog/ss:3293793</span>
+
+				<p>De <span class="kaart">‘Imperial Federation Map of the World’</span> bevat net als de <span class="kaart">‘Europa Regina’</span> partijdig beeldgebruik en daardoor een vooringenomen narratief. Deze kaart uit <span class="jaar">1886</span> werd voor het eerst gepubliceerd tijdens een <span class="gebeurtenis">koloniale en Indische tentoonstelling</span>. Op deze kaart zie je een weergave van de wereld. Aan de randen van de kaart staan verschillende figuren en symbolen afgebeeld. Deze figuren en symbolen beelden het <span class="country">Britse Koninkrijk</span> met al haar rijkdom en industriële ontwikkeling uit. Aan de hand van statistieken wordt bijvoorbeeld de infrastructuur van <span class="country">Britse</span> handel- en zeeroutes getoond. Alleen de <span class="country">Britse kolonies</span> worden met een kleur, <span class="kleur">rood</span>, gemarkeerd. Op de kaart staat ook een kleine wereldbol weergegeven waarop een persoon zit met een <span class="country">Brits</span> schild en een staf in zijn hand. Alle overige figuren kijken in zijn richting. Dit beeldgebruik in combinatie met kleurgebruik en informatie over bijvoorbeeld handelsroutes geven de visie van de cartograaf weer; het <span class="country">Britse Koninkrijk</span> is wereldheerser.</p>
+				<p>De gekozen projectie onderbouwt dit standpunt. Het <span class="country">Britse Koninkrijk</span> wordt groots vertoond doordat er gebruik wordt gemaakt van de <span class="projection">Mercator projectie</span>. Bij dit soort <span class="projection">cilinder projecties</span> zijn de meridianen en parallellen zichtbaar op een eenvoudig rechthoekig raster. Deze projectie heeft rond de evenaar weinig vervorming, maar geeft de noord- en zuidpool groter weer dan ze werkelijk zijn.<a href="#footnotes"><span class="footnote"></span></a> Hierdoor vallen westerse landen verhoudingsgewijs groter uit. In Bijlage 1 vindt u meer informatie over projecties.</p>
+
+
+
+
+				<h2>Angling in Troubled Waters: A Serio-Comic Map of Europe</h2>
+				<img class="imageprint" src="image/Angling in Troubled Waters.png"><img class="imageweb imageleft" src="image/Angling in Troubled Waters mono.png" onMouseOver="this.src='image/Angling in Troubled Waters.png'" onMouseOut="this.src='image/Angling in Troubled Waters mono.png'"/>
+				<span class="caption textleft">Rose, Frederick W. (1899). Angling in Troubled Waters: A Serio-Comic Map of Europe [Kaart]. Geraadpleegd van https://digital.library.cornell.edu/catalog/ss:3293834</span>
+
+				<p>De kaart <span class="kaart">‘Angling in Troubled Waters’</span> is geproduceerd door <span class="persoon">Frederick W. Rose</span> in <span class="jaar">1899</span>. Deze kaart beschrijft door het gebruik van karikatuur een onrustig internationaal politiek klimaat. Suggestief beeldgebruik wordt ingezet om de boodschap van de cartograaf te visualiseren. Landen zijn afgebeeld als vissers die proberen hun territorium te vergroten door kleine vissen (landen) binnen te halen. Sommige landen hebben meer moeite dan andere landen met het vangen van vis. Zo worstelt <span class="country">Frankrijk</span> op land met Dreyfus waardoor de vis <span class="city">(Fashoda)</span> ontsnapt. Op de kaart staan ook gebaren zoals het afpakken van een kroon. Dit zijn voorbeelden van suggestieve reflecties van het politieke klimaat.<a href="#footnotes"><span class="footnote"></span></a></p>
+
+				<p>Ook de tekst de suggestie dat er onrust in <span class="country">Europa</span> heerst. De titel ‘Angling in Troubled Waters’ vertaalt zich als ‘Hengelen in Onrustige Wateren’. Het gebruik van het woord ‘troubled’ geeft aan dat er volgens de cartograaf reuring heerst. <span class="country">Nederland</span> wordt afgebeeld als een jonge Koningin. In de tekst op de kaart wordt haar voorspoed gewenst. Dit zijn tekstelementen die de visie van de cartograaf verwoorden.<a href="#footnotes"><span class="footnote"></span></a></p>
+
+
+
+
+				<h2>American Bases In the World</h2>
+				<img class="imageprint" src="image/American Bases In the World.jpg"><img class="imageweb imageleft" src="image/American Bases In the World mono.png" onMouseOver="this.src='image/American Bases In the World.png'" onMouseOut="this.src='image/American Bases In the World mono.png'"/>
+				<span class="caption textleft">Parti Communiste Francais [Communist Party of France]. (1951). Voici les Bases Americaines dans le Monde: Que est l'agresseur? Qui Menace? (Here Are the American Bases Throughout the World: Who is the Aggressor? Who the Threat?)[Poster]. Geraadpleegd van https://digital.library.cornell.edu/catalog/ss:3293908</span>
+
+				<p><span class="kaart">‘American Bases In the World’</span> is een affiche geproduceerd door de <span class="bedrijf">Communistische Partij van Frankrijk</span> in <span class="jaar">1951</span>, waarbij tekst een zeer sturende rol heeft. Op de poster staan teksten als: ‘Hier zijn de Amerikaanse basissen verspreid over de hele wereld’ en vragen als: ‘Wie is de agressor? Wie het gevaar?’. Er wordt een duidelijke boodschap meegegeven, namelijk wie de veroorzaker is en wie er gevaarlijk is. Dit is de persoonlijke visie van de <span class="bedrijf">Communistische Partij</span>. Deze kaart geeft het standpunt weer van de <span class="country">U.R.S.S.</span>, namelijk dat de <span class="country">Verenigde Staten</span> vijand zijn. Volgens de <span class="country">U.R.S.S.</span> heeft de <span class="country">Verenigde Staten</span> veel militaire basissen op hun gericht. Dit wordt uitgebeeld door middel van pijlen die vanuit <span class="country">Europa</span>, <span class="country">Afrika</span>, <span class="country">Azië</span>,  <span class="country">Groenland</span> en <span class="country">Noord-Amerika</span> naar <span class="country">Democraties Populaires</span>, de <span class="country">U.R.S.S.</span>, <span class="country">Mongolie</span> en <span class="country">Chine</span> wijzen.<a href="#footnotes"><span class="footnote"></span></a> <span class="persoon">Mark Monmonier</span> beschrijft in zijn boek <span class="titlereference">‘How to Lie with Maps’</span> dat pijlen een krachtig suggestief symbool zijn om het narratief te beïnvloeden. Zo kunnen troepenmachten aangedikt worden, aanvallen van grenzen gedramatiseerd worden en preventieve aanvallen worden gerechtvaardigd.<a href="#footnotes"><span class="footnote"></span></a> Omdat de pijlen op deze kaart alleen vanuit ‘vijandelijke gebieden’ komen, wordt de lezer onjuist of op zijn minst, eenzijdig geïnformeerd.</p>
+
+				<p>Het <span class="kleur">blauwe</span> kleurgebruik op de kaart valt op omdat het niet overeen komt met de traditionele kleur <span class="kleur">(rood)</span> die gebruikt wordt door socialistische en communistische partijen in hun visuele identiteit. Kaarten die voornamelijk <span class="kleur">blauw</span> als kleur hanteren roepen eerder democratische associaties op, aldus <span class="persoon">H. Ajarai</span>.<a href="#footnotes"><span class="footnote"></span></a></p>
+
+
+
+
+				<h2>Portugal is Not A Small Country</h2>
+				<img class="imageprint" src="image/Portugal.jpg"><img class="imageweb imageleft" src="image/Portugal mono.jpg" onMouseOver="this.src='image/Portugal.jpg'" onMouseOut="this.src='image/Portugal mono.jpg'"/>
+				<span class="caption textleft">Galvão, H. (1934). Portugal não é um pais pequeno (Portugal is Not A Small Country) [Kaart]. Geraadpleegd van https://digital.library.cornell.edu/catalog/ss:3293851</span>
+
+				<p><span class="regQuote">“The map is the perfect symbol of the state”</span><a href="#footnotes"><span class="footnote"></span></a> volgens <span class="persoon">Monmonier</span>. Om een nationale identiteit te vormen, te versterken of te verzwakken, zijn visuele voorstellingen van een land van invloed.</br> 
+				Het bedekken van grondgebied kan worden ingezet om de grootte van grondgebieden met elkaar te vergelijken. De informatie die hierbij wordt verkregen zorgt er voor dat landen elkaar kunnen beschuldigen, bevragen of rechtvaardigen. Op deze kaart bedekken de grondgebieden van <span class="country">Portugal</span> en haar koloniale gebieden en de kaart van Europa elkaar. Volgens <span class="persoon">Heriberto Cairo</span> is dit om aan te tonen dat <span class="country">Portugal</span> mee telt als wereldmacht.<a href="#footnotes"><span class="footnote"></span></a> Omdat de vergelijking van grondgebied, zowel visueel als in de oppervlakte berekening, niet de koloniale gebieden van de voornaamste <span class="country">Europese landen</span> mee neemt, ontstaat een eenzijdig beeld over de territoriale vergelijking tussen <span class="country">Portugal</span> en de voornaamste <span class="country">Europese buurlanden</span>.</p>
+
+				<p><span class="persoon">António Salazar</span>, premier van <span class="gebeurtenis">Portugals militaire dictatorschap</span> tussen <span class="jaar">1932</span> en <span class="jaar">1968</span>, vond de grootsheid van <span class="country">Portugal</span> een belangrijk thema. Zijn voorganger bij het Ministerie van Koloniën, <span class="persoon">Armindo Monteiro</span>, stelde het volgende: <span class="regQuote">“we look small in Europe, but we are big in the world”</span>.<a href="#footnotes"><span class="footnote"></span></a> De kaart <span class="kaart">'Portugal is Not A Small Country'</span> werd door <span class="persoon">Henrique Galvão</span> gemaakt en voor het eerst vertoont tijdens één van <span class="persoon">Salazars</span> eerste initiatieven, namelijk de tentoonstelling <span class="titlereference">‘First Colonial Portugese Exhibition of Porto’</span>. Dit wekt de suggestie dat de kaart politiek geladen is.</p>
+
+
+
+				<h2>Israel and the Arab States</h2>
+				<img class="imageprint" src="image/Israel and the Arab States.jpg"><img class="imageweb imageleft" src="image/Israel and the Arab States mono.png" onMouseOver="this.src='image/Israel and the Arab States.jpg'" onMouseOut="this.src='image/Israel and the Arab States mono.png'"/>
+				<span class="caption textleft">CARTA. (1967). Israel and the Arab States/The Arab Deployment for Attack 4 June 1967/The Cease-Fire Line 10 June 1967 [Kaarten]. Geraadpleegd van https://digital.library.cornell.edu/catalog/ss:19343649</span>
+				<p>De flyer met daarop drie kaarten genaamd <span class="kaart">‘Israel and the Arab States’</span> werd in <span class="jaar">1967</span> uitgegeven door de <span class="bedrijf">Israëlische uitgeverij van altassen en kaarten (CARTA)</span>. De drie kaarten zijn op één vel afgedrukt en er zijn twee subkoppen: <span class="kaart">‘The Arab Deployment for Attack 4 June 1967’</span> en <span class="kaart">‘The Cease-Fire Line 10 June 1967’</span>. De titels suggereren dat de kaarten ieder een moment in de geschiedenis beschrijven. Volgens <span class="persoon">PJ Mode</span> werd deze flyer kort na de <span class="gebeurtenis">Zesdaagse oorlog</span> uitgegeven. De kaarten tonen een aanval van <span class="country">dertien Arabische</span> landen tegen <span class="country">Israël</span>. Dit gebeurt door dynamische suggestieve symbolen, zoals pijlen, te combineren met aantallen van militaire voertuigen.<a href="#footnotes"><span class="footnote"></span></a> In de vergelijking overtreffen de <span class="country">Arabische landen</span> <span class="country">Israël</span> met gemak wat betreft het bruto nationaal product en defensiebudgetten.</p>
+
+				<p>De titel <span class="kaart">'Israel and the Arab States'</span> beargumenteert dat het alleen om <span class="country">Israël</span> en <span class="country">Arabische</span> landen gaat. Dit roept de vraag op waar de <span class="country">Israëlische bondgenoten</span> zijn, zoals de <span class="country">Verenigde Staten</span> en <span class="country">Europese landen</span>. Er wordt niet duidelijk wat hun rol is. De titel ‘The Arab Deployment for Attack’ geeft letterlijk aan dat het om aanvallen gaat in plaats van verplaatsen van troepen. De kaart is in het Engels gemaakt. Dit wekt de indruk dat het bedoeld is om meningen en standpunten te doen veranderen in Engels sprekende landen.<a href="#footnotes"><span class="footnote"></span></a></p>
+
+				<p>De kaart getiteld <span class="kaart">‘The Arab Deployment for Attack, 4 June 1967'</span> toont grote hoeveelheden oorlogsvoertuigen, zoals straaljagers, raketwerpers en onderzeeërs, die vrijwel allemaal gericht zijn op Israël. Ook worden pijlen met teksten als ‘from Algeria’, gericht op <span class="country">Israël</span>, gebruikt om militaire beweging van de Arabische landen weer te geven. Op <span class="jaar">5 juni 1967</span> <span class="gebeurtenis">lanceert Israël een preventieve aanval tegen <span class="country">Egypte</span></span>. PJ Mode stelt dat de kaart deze aanval stilzwijgend ondersteunt.<a href="#footnotes"><span class="footnote"></span></a> Omdat deze kaart alleen <span class="country">Arabische</span> militaire krachten toont, wordt een oneerlijk en eenzijdig beeld gecreëerd van de situatie. Dit is opvallend omdat <span class="country">Israël</span> een zege vierde na de tegenaanval op <span class="country">Egypte</span>.</p>
+
+				<p>De kleinste kaart getiteld <span class="kaart">‘The Cease-Fire Line 10 June 1967’</span> viert de <span class="country">Israëlische</span> zege en toont de nieuwe staak-het-vuren grens van <span class="jaar">1967</span>.<a href="#footnotes"><span class="footnote"></span></a> De gebieden worden door drie kleuren gemarkeerd. De <span class="country">Arabische landen</span> worden gemarkeerd met <span class="kleur">groen</span>. <span class="country">Israël</span> wordt <span class="kleur">roze-achtig</span> gekleurd. Daarnaast worden landgrenzen, teksten en symbolen gekleurd in het <span class="kleur">zwart</span>. Dertien <span class="kleur">donkergroene</span> <span class="country">Arabische</span> landen vergeleken met het, in <span class="kleur">roze</span> gekleurde <span class="country">Israël</span> lijkt een oneerlijke vergelijking. Roze suggereert een treurig, zielig, bloedend karakter.<a href="#footnotes"><span class="footnote"></span></a> <span class="kleur">Groen</span> komt daarentegen energiek en krachtig over.</p>
+
+
+
+
+				<h2>Palestinian Loss of Land</h2>
+				<img class="imageprint" src="image/Palestinian Loss of Land.jpg"><img class="imageweb imageleft" src="image/Palestinian Loss of Land.jpg" onMouseOver="this.src='image/Palestinian Loss of Land.jpg'" onMouseOut="this.src='image/Palestinian Loss of Land.jpg'"/>
+				<span class="caption textleft">Biles, T. (2003). Palestinian Loss of Land 1946-1999 [Kaarten]. Geraadpleegd van https://digital.library.cornell.edu/catalog/ss:3293951</span>
+
+				<p>De omstreden serie van vier kaarten genaamd <span class="kaart">‘Palestinian Loss of Land’</span> is geproduceerd door <span class="persoon">Timothy Biles</span> in <span class="jaar">2003</span>. De kaart vertoont ‘zogenaamd’ de transitie van <span class="country">Palestijns</span> naar <span class="country">Israëlisch grondgebied</span> in vier stadia van <span class="jaar">1946</span> tot <span class="jaar">1999</span>. De vier delen worden bekritiseerd, omdat ze de geschiedenis onjuist visualiseren.</p>
+
+				<p>De kaart ‘Stage 1’ wordt bekritiseerd vanwege onjuiste aanduidingen wat betreft territorium. Het <span class="country">‘Palestijnse’</span> grondgebied was eigenlijk territorium dat gecontroleerd en beheerd werd door de <span class="country">Britten</span>. Het was dus niet <span class="country">Palestijns</span> terwijl dit wel wordt weergegeven. Kaart ‘Stage 2’ <span class="gebeurtenis">visualiseert Resolutie 181 van de Algemene Vergadering van de Verenigde Naties.</span> Hoewel de <span class="country">Joden</span> de resolutie accepteerde, deden de <span class="country">Arabieren</span> dit niet. Op de kaart wordt het zo gepresenteerd alsof de <span class="country">Arabieren</span> de resolutie accepteerden. De derde kaart ‘Stage 3’ geeft de <span class="gebeurtenis">Arabisch-Israëlische oorlog</span> van <span class="jaar">1948</span> weer, maar negeert de <span class="gebeurtenis">Egyptische bezetting van Gaza en de annexatie van de West Bank door Jordanië.</span> De kaart ‘Stage 4’ reflecteert de uitkomst van de <span class="gebeurtenis">Zesdaagse Oorlog in <span class="jaar">1967</span>en de Oktoberoorlog</span> in <span class="jaar">1973</span>. Het is opmerkelijk dat de kaart het <span class="country">Israëlisch</span> terugtrekken uit onder andere de <span class="city">Sinaï</span> negeert.<a href="#footnotes"><span class="footnote"></span></a></p>
+
+				<p><span class="country">Palestijns territorium</span> wordt op de kaart <span class="kleur">groen</span> gekleurd en <span class="country">Israëlisch grondgebied</span> <span class="kleur">wit</span>. De kleur <span class="kleur">wit</span> wordt op verschillende manier geassocieerd. De meeste associaties, vooral in westere culturen, zijn positief, zoals schoonheid, vrede en onschuld.<a href="#footnotes"><span class="footnote"></span></a> Daarentegen wordt <span class="kleur">wit</span> in <span class="country">China</span> geassocieerd met rouw.<a href="#footnotes"><span class="footnote"></span></a> <span class="kleur">Groen</span> wordt geassocieerd met gezondheid en vitaliteit, maar ook met ziekte en gif.<a href="#footnotes"><span class="footnote"></span></a> Shiitische Islamieten beschouwen <span class="kleur">groen</span> als heilige kleur.<a href="#footnotes"><span class="footnote"></span></a> <span class="persoon">Johannes Itten</span> beschrijft de expressieve waarden van groen als vruchtbaar, vrede, rust en hoop.<a href="#footnotes"><span class="footnote"></span></a> Kortom, de expressieve kleurwaarden van wit en groen verschillen behoorlijk. <span class="persoon">Johannes Itten</span> bevestigt dit standpunt. Zijn theorie legt uit dat gedragingen van kleuren betekenisvol worden door menselijke culturele inhoud. Dit noemt hij de psychofysische werking van kleur.<a href="#footnotes"><span class="footnote"></span></a></p>
+
+				<p>Als we de kleuren op de kaart zonder context bekijken, kunnen de kleuren suggereren dat <span class="kleur">groen</span> ‘het kwaad’ voorstelt, en <span class="kleur">wit</span> ‘puur- en goedheid’ voorstelt. Daarnaast lijken de kleuren te suggereren dat <span class="kleur">groen</span> <span class="country">(Israël)</span> krimpt, in plaats van dat, <span class="country">Israël</span> <span class="country">Palestina</span> overneemt. Het kleurgebruik zou hierdoor (on)bewust de boodschap van de kaart kunnen beïnvloeden. Anderzijds wordt <span class="kleur">groen</span> gezien als kleur van de Islam en komt <span class="kleur">wit</span> in de <span class="country">Israëlische</span> staatsvlag terug.</p>
+
+
+
+
+				<h2>A Map of the Earth and how after the Flood it was Divided among the Sons of Noah</h2>
+				<img class="imageprint" src="image/A map of the Earth.jpg"><img class="imageweb imageleft" src="image/A map of the Earth.jpg" onMouseOver="this.src='image/A map of the Earth.jpg'" onMouseOut="this.src='image/A map of the Earth.jpg'"/>
+				<span class="caption textleft">Moxon, J. (1681). A Map of the Earth and how after the Flood it was Divided among the Sons of Noah [Kaart]. Geraadpleegd van https://digital.library.cornell.edu/catalog/ss:8245856</span>
+
+				<p>De kaart <span class="kaart">‘A Map of the Earth and how after the Flood it was Divided among the Sons of Noah’</span> is volgens <span class="persoon">Rodney W. Shirley</span> waarschijnlijk gemaakt door <span class="cartograaf">Joseph Moxon</span> in <span class="jaar">1671</span>. De kaart was volgens <span class="persoon">Shirley</span> in eerste instantie bedoeld voor religieuze educatie en werd daarom in religieuze werken, zoals bijbels, verspreid.<a href="#footnotes"><span class="footnote"></span></a> <span class="gebeurtenis">Het scheppingsverhaal in Genesis</span> is boven de kaart zichtbaar en diverse bijbelse mijlpalen, zoals <span class="gebeurtenis">de tien geboden</span>, worden onder de kaart afgebeeld. Gods stem wordt vervolgens verbeeld door <span class="country">Hebreeuwse</span> karakters in de zon. Op de kaart is hiërarchie tussen religieuze en niet religieuze locaties. Op de kaart en in de legenda wordt met nummers verwezen naar niet Christelijke landen. Daarentegen worden namen van Christelijke landen voluit geschreven op de kaart. Het is opmerkelijk dat de stad <span class="city">Eden</span>, die volgens de Bijbel in het midden van de wereld zou liggen, op het midden van de kaart is geplaatst. Er is geen vast centrum van de aarde, omdat elke berekening van een projectie een ander beginpunt kan gebruiken. Hierdoor kan elke plek op aarde een beginpunt worden. De cartograaf kan dus een keuze maken hoe hij of zij de wereld in beeld brengt. Bijbelse mijlpalen en de selectie van landinformatie onderbouwen het standpunt van <span class="persoon">Shirley</span> dat de kaart een religieus educatief doeleinde dient.</p>
+
+
+
+
+				<h2>Mer des Hystoires World Map</h2>
+				<img class="imageprint" src="image/Mer des Hystoires World Map.jpg"><img class="imageweb imageleft" src="image/Mer des Hystoires World Map.jpg" onMouseOver="this.src='image/Mer des Hystoires World Map.jpg'" onMouseOut="this.src='image/Mer des Hystoires World Map.jpg'"/>
+				<span class="caption textleft">[Mer des Hystoires World Map]. (1491). Geraadpleegd van https://digital.library.cornell.edu/catalog/ss:3293712</span>
+
+				<p>De kaart <span class="kaart">‘Mer des Hystoires World Map’</span> uit <span class="jaar">1491</span>, waarvan de maker onbekend is, is volgens <span class="persoon">E. Edson</span> een bekende mappeamundi. Mappeamundi stamt af van het Middeleeuws-Latijnse ‘mappa’, dat voor doek of grafiek stond, en ‘mundi’ dat ‘van de wereld’ betekent. Deze term wordt volgens Edson gebruikt voor Middeleeuwse wereldkaarten die door monniken in <span class="country">Europa</span> met de hand werden vervaardigd.<a href="#footnotes"><span class="footnote"></span></a></p>
+
+				<p><span class="persoon">J.B. Harley & D. Woodward</span> beschrijven in <span class="titlereference">‘Medieval Mappaemundi’</span> dat de doelstellingen van deze kaart duidelijk zijn; namelijk het verspreiden van ideologie en het doorgeven van cruciale Christelijke geschiedenis. Opmerkelijk is dat het doorgeven van Christelijke geschiedenis zwaarder woog dan geografische locaties objectief weer te geven.<a href="#footnotes"><span class="footnote"></span></a> Dit maakt de kaart vooringenomen. <span class="persoon">J.A. Tyner</span> beschrijft in <span class="titlereference">‘Persuasive Cartography’</span> dat in de Middeleeuwen kaarten met een beïnvloedend doeleinde voor het eerst voor kwamen.<a href="#footnotes"><span class="footnote"></span></a></p>
+
+				<p><span class="persoon">Evelyn Edson</span> beschrijft in haar boek <span class="titlereference">‘Mapping Time and Space’</span> dat geografische verklaringen die te lezen zijn in de Bijbel, door cartografen werden overgenomen op geografische kaarten. Zo besloten cartografen Bijbelse uitspraken zoals <span class="regQuote">“This is Jerusalem; I have set her in the midst of the nations and the countries all around her.”</span> (Ezekiel 5:5 New King James Version) letterlijk over te nemen.<a href="#footnotes"><span class="footnote"></span></a></p>
+
+				<p>De kaart toont drie continenten in het cirkelvormige <span class="projection">T-O model</span>. Een <span class="projection">T-O model</span> is een kaart waarbij de wereld als drie continenten wordt weergeven die door rivieren en zee worden gesplitst. <span class="country">Azië</span> is op de bovenhelft weergegeven, <span class="country">Europa</span> op de linkeronderkant en <span class="country">Afrika</span> op de rechteronderkant. <span class="persoon">Wesley A. Brown</span> beschrijft dat de kaart gebaseerd is op Middeleeuwse cartografische tradities, zoals het idee dat <span class="gebeurtenis">Genesis als paradijs</span> begrensd wordt door muren en vier rivieren die door de wereld omlaag vloeien. Hij stelt dat de kaart gebaseerd is op het idee dat Het Heilige Land in het midden van de wereld lag. De cartograaf heeft daarom <span class="country">Palestina</span> in het midden van de kaart geplaatst. Tevens wordt de waarde van Het Heilige Land versterkt door de hoeveelheid plaatsnamen in dat gebied.<a href="#footnotes"><span class="footnote"></span></a>
+				</br>
+				<span class="persoon">Campbell</span> geeft aan dat er Bijbelse invloed op sommige <span class="projection">T-O kaarten</span> is. Zo worden de drie continenten vernoemd naar de drie zonen van <span class="persoon">Noah</span> die daar zouden woonden. <span class="country">Azië</span> werd <span class="persoon">Shem</span>, <span class="country">Europa</span> <span class="persoon">Japhet</span> en <span class="country">Afrika</span> <span class="persoon">Ham</span> genoemd.<a href="#footnotes"><span class="footnote"></span></a> Dit bevestigt het standpunt dat kaarten beïnvloed worden door religieuze informatie en zo een vooringenomen boodschap communiceren.</p>
+
+
+
+				<h2>The situation in Syria</h2>
+				<img class="imageprint" src="image/SyrieThomas.png"><img class="imageweb imageleft" src="image/SyrieThomas.png" onMouseOver="this.src='image/SyrieThomas.png'" onMouseOut="this.src='image/SyrieThomas.png'"/>
+				<span class="caption textleft">Van Linge, T. (2015, 16 juli). The situation in Syria. Geraadpleegd van https://decorrespondent.nl/3067/waarom-je-de-macht-van-islamitische-staat-nooit-in-een-kaart-kunt-vatten/339025036009-a7fd4731</span>
+
+				<p>De kaart <span class="kaart">‘the situation in Syria’</span> is gemaakt door kaartenmaker <span class="cartograaf">Thomas van Linge</span> en toont de situatie met betrekking tot het conflict in <span class="country">Syrië</span> dat zich afspeelt op <span class="jaar">16 juli 2015</span>.</p>
+
+				<p>Een factor die meespeelt bij de interpretatie van kaarten is geloofwaardigheid van de kaart. De reputatie van de kaartenmaker heeft hier invloed op. <span class="cartograaf">Van Linge</span> beschrijft zichzelf op twitter als een 21 jarige die gepassioneerd is over vrijheid, democratie, mensenrechten, en het behoud van dieren in het wild. Hij brengt oorlogen en opstanden in kaart.<a href="#footnotes"><span class="footnote"></span></a> <span class="persoon">Hofman</span> en <span class="persoon">de Weerd</span> beschrijven dat de media zijn kaarten massaal gebruiken als bron voor verslaglegging. Dit zou juist vanwege de morele lading van de kaarten gebeuren. <span class="persoon">Hofman</span> en <span class="persoon">de Weerd</span> stellen dat mensen graag een objectieve bron of positie van de maker zien, maar wanneer deze ontbreekt, we snel gerust gesteld worden door <span class="regQuote">“een student met een obsessie en veel tijd”</span>.<a href="#footnotes"><span class="footnote"></span></a></p>
+
+				<p>Ook bronnen dragen bij aan de geloofwaardigheid van een kaartenmaker. Hofman en de Weerd beschrijven dat <span class="cartograaf">van Linge</span> voor zijn kaarten veel lokale bronnen gebruikt en dat zijn bronnen vanwege de politiek gevoelige conflicten vaak niet openbaar zijn uit angst voor hun leven.<a href="#footnotes"><span class="footnote"></span></a> De identiteit van de bronnen is niet goed te achterhalen. Het is de vraag hoe betrouwbaar de bronnen zijn die hij gebruikt als informatie voor zijn kaarten.</p>
+
+				<p>Op de kaart <span class="kaart">‘the situatiën in Syria’</span> brengt <span class="cartograaf">van Linge</span> meer dan eenentwintig verschillende groeperingen, zoals Het Vrij Syrisch Leger, Assad’s regime en de Koeridsche Volksbeschermingseenheden, in kaart. Dit zorgt er voor dat de kaart behoorlijk kleurrijk wordt. Een gevaar van het kleuren van gebieden in één kleur, is dat er aggregatiefouten optreden. Aggregatiefouten zijn fouten waarbij iedereen binnen een met kleur gemarkeerd gebied tot één groep toebehoort.<a href="#footnotes"><span class="footnote"></span></a> In werkelijkheid is niet iedereen in <span class="country">Koerdisch</span> gemarkeerd gebied perse pro-Koerdisch. <span class="persoon">Mark Monmonier</span> beschrijft dat cartografen, vanwege esthetische redenen en om geen verwarring te zaaien, vaak kiezen voor maximaal vier of vijf kleuren om te refereren aan de legenda.<a href="#footnotes"><span class="footnote"></span></a></p>
+				<p>Een andere factor die belangrijk is bij de kaarten van <span class="cartograaf">Thomas van Linge</span> is het mondiale netwerk van bijvoorbeeld de <span class="country">Islamitische Staat</span>. Het woord mondiaal wordt in de <span class="bedrijf">Van Dale</span> beschreven als <span class="regQuote">“over de hele wereld verspreid, de hele wereld betreffend”</span>.<a href="#footnotes"><span class="footnote"></span></a> <span class="cartograaf">Van Linge</span> zijn kaarten tonen nauwelijks het mondiale netwerk van de <span class="country">Islamitische Staat</span>, omdat ze alleen het gebied rond <span class="country">Syrië</span> en <span class="country">Irak</span> in kaart brengen. Volgens <span class="persoon">Hofman</span> en <span class="persoon">de Weerd</span> is dit opmerkelijk, omdat het essentieel is om de <span class="country">IS</span> in kaart te brengen. <span class="persoon">Hofman</span> en <span class="persoon">de Weerd</span> schrijven in hun artikel dat dit dit netwerk juist de kern is van de <span class="country">Islamitische Staat</span>: <span class="regQuote">“de kern van een fundamentalistische netwerkorganisatie als IS, die met hun ‘cellen’ overal op kunnen duiken in de wereld”</span>.<a href="#footnotes"><span class="footnote"></span></a> De kaarten van <span class="cartograaf">Thomas Van Linge</span> missen de essentiële mondiale netwerkkracht en presenteren daardoor weergaves met beperkte en deels onjuiste informatie.</p>
+
+
+
+
+
+				<h2>Nuclear Poison Gas Cloud</h2>
+				<img class="imageprint" src="image/William Bunge Nuclear Poison Gas Cloud.jpg"><img class="imageweb imageleft" src="image/William Bunge Nuclear Poison Gas Cloud.jpg" onMouseOver="this.src='image/William Bunge Nuclear Poison Gas Cloud.jpg'" onMouseOut="this.src='image/William Bunge Nuclear Poison Gas Cloud.jpg'"/>
+				<span class="caption textleft">Bunge, W. (1988). Nuclear Poison Gas Cloud [Kaart]. Geraadpleegd van https://digital.library.cornell.edu/catalog/ss:19343513</span>
+
+				<p>De kaart <span class="kaart">‘Nuclear Poison Gas Cloud’</span> is geproduceerd door <span class="cartograaf">William Bunge</span> en gepubliceerd in zijn boek <span class="titlereference">‘Nuclear War Atlas’</span> in <span class="jaar">1988</span>. Dit boek werkt een eerder verschenen pamflet uit <span class="jaar">1982</span> uit, dat resultaten van een <span class="gebeurtenis">mogelijke atoomoorlog</span> beschrijft. <span class="cartograaf">Bunge</span> staat bekend als radicaal geograaf en vredesactivist die pleitte voor beschrijvende grafische elementen om de boodschap van cartografische propaganda te onderbouwen. <span class="cartograaf">Bunge</span> is van de <span class="bedrijf">Wayne State University</span> ontslagen vanwege zijn radicale ideeën en conflicten met collega geografen.<a href="#footnotes"><span class="footnote"></span></a></p>
+
+				<p><span class="cartograaf">Bunge</span> presenteert onder andere deze kaart voor de verkoop en verspreiding ervan in een videoboodschap. Hij spreekt vooral over het aantal nucleaire reactoren in <span class="country">Duitsland</span>. Hij stelt dat als er waterstofbommen gebruikt zullen worden, het bijna onmogelijk is om de nucleaire reactoren niet te raken. Dit zou volgens <span class="cartograaf">Bunge</span> een <span class="gebeurtenis">derde wereld oorlog</span> kunnen starten, met giftige gaswolken als onbestuurbaar bijeffect.<a href="#footnotes"><span class="footnote"></span></a></p>
+
+				<p><span class="cartograaf">William Bunge</span> was frequent gebruiker van de kleur <span class="kleur">rood</span> als suggestief element en heeft er voor gekozen om deze kleur een prominente rol te geven op deze kaart. <span class="cartograaf">Bunge</span> bekritiseerde de ‘zogenaamde’ vreedzame nucleaire reactoren door een suggestief symbool, een giftige nucleaire gaswolk afkomstig uit <span class="country">West-Duitsland</span>, fel <span class="kleur">rood</span> te kleuren. Hij bekritiseerde het nucleaire wereldwijde klimaat door een potentiële subjectieve situatie te schetsen.<a href="#footnotes"><span class="footnote"></span></a> Het kleurgebruik en het schetsen van een doemscenario zorgen voor een vooringenomen boodschap, omdat het geen alternatieve informatie biedt.
+				</br>
+				Iets dat dit standpunt onderbouwt is dat <span class="cartograaf">Bunge</span> niet schroomt om aannames te maken. Hij neemt in de videoboodschap aan dat, als alles zou ontploffen, het <span class="country">Polen</span> en <span class="country">Rusland</span> zou uitroeien, en dat die op hun beurt zullen wraken.<a href="#footnotes"><span class="footnote"></span></a></p>
+
+
+
+
+				<h2>Logashkino</h2>
+				<img class="imageprint" src="image/Logashkino.jpg"><img class="imageweb imageleft" src="image/Logashkino.jpg" onMouseOver="this.src='image/Logashkino.jpg'" onMouseOut="this.src='image/Logashkino.jpg'"/>
+				<span class="caption textleft">Monmonier, M. (1996). Figure 8.1. Representation of Logashkino and vicinity, on East Siberian Sea, on various Soviet maps published between 1939 and 1969. Geraadpleegd van Monmonier, M. (1996). How to Lie with Maps. pp. 116, 198.</span>
+
+				<p>Een zestal <span class="country">Sovjet</span> kaarten van de <span class="country">Oost-Siberische</span> kust tonen de stad <span class="city">Logashkino</span> en de omgeving op verschillende geografisch locaties. Deze reeks kaarten zijn volgens <span class="persoon">Monmonier</span> gepubliceerd door de <span class="country">Sovjet Unie</span> tussen <span class="jaar">1939</span> en <span class="jaar">1969</span>. De oudste kaart <span class="kaart">‘Bol’shoy Sovetskiy Atlas Mira’</span> toont de stad ten westen van de rivier in het binnenland. De iets jongere kaart <span class="kaart">‘Karta SSSR’</span> geeft de stad <span class="city">Logashkino</span> bij de kust aan de rivier weer en de jongste kaart <span class="kaart">‘Atlas Mira’</span> geeft daarentegen de stad een stuk westelijker weer. <span class="persoon">Monmonier</span> stelt dat de doelstellingen van deze kaarten het misvormen van geografische informatie was, om zo landen als <span class="country">China</span> van onbetrouwbare cartografie te voorzien.<a href="#footnotes"><span class="footnote"></span></a> Cartografen zetten vijanden zo op het verkeerde been. Deze selectieve vervorming zorgt voor een vooringenomen kaart.</p>
+
+
+
+
+
+				<h2>A nation of one people from many countries</h2>
+				<img class="imageprint" src="image/A nation of one people from many countries.jpg"><img class="imageweb imageleft" src="image/A nation of one people from many countries.jpg" onMouseOver="this.src='image/A nation of one people from many countries.jpg'" onMouseOut="this.src='image/A nation of one people from many countries.jpg'"/>
+				<span class="caption textleft">Bourne, E. (1940). America - A Nation of One People From Many Countries [Kaart]. Geraadpleegd van https://digital.library.cornell.edu/catalog/ss:19343271</span>
+
+				<p>De kaart <span class="kaart">‘A Nation of One People from Many Countries’</span> werd in <span class="jaar">1940</span> geïnitieerd door <span class="bedrijf">‘The Council Against Intolerance in America’</span> en werd gemaakt door <span class="cartograaf">Emma Bourne</span>, aldus <span class="persoon">Lauren Young</span>. In de <span class="country">Verenigde Staten</span> was destijds een isolationistisch gevoel voelbaar. Dit houdt in dat <span class="country">Amerikanen</span> het gevoel hadden dat immigranten een gevaar vormden voor hun land en zich hier tegen wilden afkeren.<a href="#footnotes"><span class="footnote"></span></a></p>
+
+				<p>De titel van de kaart <span class="kaart">‘A Nation of One People from Many Countries’</span> beargumenteert letterlijk dat het land uit één type mens bestaat, die uit veel landen afkomstig zijn. Op de kaart is een lijst zichtbaar met bekende immigranten in de literatuur, industrie, wetenschap en kunst. Deze lijst onderbouwt het argument dat de <span class="country">Amerikaanse</span> maatschappij baat heeft bij de immigranten. <span class="persoon">Young</span> beschrijft als voornaamste reden van de kaart dat de Amerikanen herinnerd moesten worden aan een land dat altijd gedefinieerd was door diversiteit. De kaart zou er voor zorgen dat in tijden van oorlog, vooroordelen over immigranten tegen worden gegaan.<a href="#footnotes"><span class="footnote"></span></a> <span class="persoon">Dara Lind</span> onderbouwt dat diversiteit <span class="country">Amerika</span> sterk maakt en dat dit gevierd moet worden.<a href="#footnotes"><span class="footnote"></span></a>
+				</br>
+				Omdat de kaart geïnitieerd is door een raad die tegen intolerantie is, is de vooringenomenheid op de kaart duidelijk aanwezig. Op de kaart staan enkel argumenten die anti-isolationistisch zijn, zoals een lijst met alleen vermeldingen van positieve merkwaardige personen, en eventuele tegengeluiden blijven weg. Hierdoor is de kaart eenzijdig en toont het een vooringenomen weergave.</p>
+
+				<p>Op de kaart zijn meerdere <span class="kleur">rode</span> linten zichtbaar. Deze linten lopen langs plekken door de <span class="country">Verenigde Staten</span> waar immigranten uit verschillende landen aan het werk en gevestigd zijn. Op de linten staan de landen vermeld die de afkomst van de immigranten aangeven. Volgens <span class="persoon">Young</span> stellen de <span class="kleur">rode</span> linten verspreiding van ethnische groepen door de <span class="country">Verenigde Staten</span> voor. Daarnaast zijn de grenzen van de <span class="country">Amerikaanse staten</span> door de cartograaf weggelaten. <span class="cartograaf">Bourne</span> geeft aan dat ze hiervoor heeft gekozen omdat deze methode etnische en religieuze diversiteit tegengaat en het land als eenheid wordt benadrukt.<a href="#footnotes"><span class="footnote"></span></a></p>
+
+
+
+
+
+				<h2>The Silver Dog With the Golden Tail</h2>
+				<img class="imageprint" src="image/The Silver Dog With the Golden Tail.jpg"><img class="imageweb imageleft" src="image/The Silver Dog mono.png" onMouseOver="this.src='image/The Silver Dog With the Golden Tail.jpg'" onMouseOut="this.src='image/The Silver Dog mono.png'"/>
+				<span class="caption textleft">The Silver Dog With the Golden Tail. Will the Tail Wag the Dog, or the Dog Wag the Tail?. (1896). Geraadpleegd van https://digital.library.cornell.edu/catalog/ss:19343394</span>
+
+				<p>De eerste versie van de flyer genaamd <span class="kaart">‘The Silver Dog With the Golden Tail’</span> verscheen voor het eerst in de <span class="bedrijf">Boston Globe</span> op <span class="jaar">13 september 1896</span>. <span class="persoon">PJ Mode</span> beschrijft dat deze publicatie gereproduceerd en verspreid werd door <span class="country">Amerika</span>. Hij geeft aan dat de flyer de positie inneemt van de democratische <span class="persoon">presidentskandidaat William Jennings Bryan</span> over het voorstel ‘Free Silver’. <span class="persoon">Presidentskandidaat William Jennings Bryan</span> stelde voor om terug te gaan naar een vaste ratio van 16:1 tussen zilver en goud in plaats van de werkelijke ratio van 30:1.<a href="#footnotes"><span class="footnote"></span></a></p>
+
+				<p>Dit standpunt zie je op verschillende manieren terug. Allereerst voorziet de ondertitel ‘Will the Tail Wag the Dog, or the Dog Wag the Tail?’ de kaart van een komische ondertoon. Met deze vraag probeert <span class="persoon">Bryan</span> de stemmers te laten nadenken over wie zij willen dat het land bestuurt met betrekking tot zijn voorstel. Het kopje 'Electeral Vote’ maakt inzichtelijk hoeveel stemmen <span class="persoon">Bryan</span> nodig heeft om het presidentschap te winnen en zijn voorstel uit te voeren. Hij stelt: <span class="regQuote">“the Silver Dog would Wag the Golden Tail”</span>.<a href="#footnotes"><span class="footnote"></span></a> Hiermee wekt <span class="persoon">Bryan</span> de suggestie dat de <span class="country">agrarische staten</span> de <span class="country">industriële staten</span> kunnen besturen als zij op hem stemmen.</p>
+
+				<p>Op de kaart staat een lijntekening van een hond met een bot in zijn bek. In het lichaam van de hond zijn de <span class="country">Amerikaanse staten</span> onderverdeeld. Volgens <span class="persoon">Bryan</span> zouden de <span class="country">agrarische staten</span> baat hebben bij zijn voorstel voor een voordeligere ratio van <span class="kleur">zilver</span> tot <span class="kleur">goud</span>. Daarom zijn deze staten <span class="kleur">zilver</span> gekleurd. De meest noordelijke industriële staten, in de staart weergegeven, zijn gezien zijn voorstel <span class="kleur">goud</span> gekleurd. De twijfelende staten zijn ongekleurd gelaten. Zijn voorstel en de gebruikte informatie versterken de boodschap van de flyer visueel. Hierdoor kan de kiezer beïnvloed worden.</p>
+
+
+
+
+				<h2>Pakistan versus India</h2>
+				<img class="imageprint" src="image/Pakistan_India.png"><img class="imageweb imageleft" src="image/Pakistan_India.png" onMouseOver="this.src='image/Pakistan_India.png'" onMouseOut="this.src='image/Pakistan_India.png'"/>
+				<span class="caption textleft">(boven) Kashmir brochure. (1981). New Delhi: Department of Tourism, Government India.</br>(onder) Pakistan Hotel Guide. (1984). Karachi: Tourism Division, Government of Pakistan.</br>Geraadpleegd van Monmonier, M. (1996). How to Lie with Maps. pp. 92, 197</span>
+
+				<p>In <span class="persoon">Mark Monmonier</span> zijn boek <span class="titlereference">‘How to Lie with Maps’</span> staat één kaart waarop <span class="country">India</span> en <span class="country">Pakistan</span> zijn afgebeeld. Beide landen hebben verschillende perspectieven over welk grondgebied toebehoort aan hun land. Deze onenigheid resulteerde in een oorlog die in <span class="jaar">augustus 1965</span> uitbrak. De verschillen in perspectieven over de geografische-politieke situatie zie je terug op de kaart. De demarcatielijn (vastgestelde scheidingslijn tussen landen) zou duidelijkheid moeten scheppen. Volgens deze demarcatielijn voert <span class="country">Pakistan</span> controle uit over het <span class="city">noordwestelijke Kashmir</span> en <span class="country">India</span> doet dat over het <span class="city">zuidelijke deel van Kashmir</span>. Beide landen ontkennen echter deze demarcatielijn. <span class="persoon">Mark Monmonier</span> stelt in zijn boek dat onenigheid over <span class="city">Kashmir</span> er voor zorgde dat beide landen een eigen kaart met daarop landgrenzen hebben gemaakt.<a href="#footnotes"><span class="footnote"></span></a> Beide toeristenkaarten geven een compleet andere verhaal, namelijk dat dat grondgebied hun toebehoort en dat ze daar controle uitoefenen. 
+				</br>
+				Beide kaarten geven daarentegen niet aan dat hun buurland deze provincie ook claimt. Omdat informatie is weggelaten is er sprake van onvolledige informatievoorziening, waardoor de lezer onbewust beïnvloed wordt.</p>
+
+
+
+
+				<h2>Helter Skelter & Northern Railway</h2>
+				<img class="imageprint" src="image/Railway.png"><img class="imageweb imageleft" src="image/Railway.png" onMouseOver="this.src='image/Railway.png'" onMouseOut="this.src='image/Railway.png'"/>
+				<span class="caption textleft">(boven) Figure 5.2. Advertising and timetable map of the Helter, Skelter & Northern Railway. (z.j.).  Geraadpleegd van Monmonier, M. (1996). How to Lie with Maps. pp. 60.</br>(onder) Figure 5.1. Engineering Departments’s map of the Helter, Skelter & Northern Railway. (z.j.).  Geraadpleegd van Monmonier, M. (1996). How to Lie with Maps. pp. 59</span>
+
+				<p><span class="persoon">Mark Monmonier</span> beschrijft de <span class="kaart">cartografische advertentie <span class="bedrijf">‘Helter Skelter & Northern Railway’ (HS&N)</span></span> uit <span class="jaar">1875</span> die de treinroute van het gelijknamige vervoersbedrijf weergeeft. Als de advertentie wordt vergeleken met een geografische kaart blijkt dat hun treinroute en die van concurrenten op de advertentie wordt misvormd. Daarnaast worden steden waar de treinroute langs gaat weggelaten.<a href="#footnotes"><span class="footnote"></span></a></p>
+
+				<p><span class="bedrijf">HS&N</span> voert concurrentie met het bedrijf <span class="bedrijf">Helter Skelter & Yon (HS&Y)</span>, dat een treinroute heeft naar het centrum van de stad <span class="city">Skelter</span>. Helaas voor <span class="bedrijf">HS&N</span> eindigt hun route in <span class="city">West Skelter</span>, een aantal kilometer van het centrum. Om gunstiger uit te komen ten opzichte van de concurrent en de locatie van het ongunstige eindstation te verbloemen, heeft de cartograaf de ligging van het eindstation vervangen.</p>
+
+				<p>Meerdere methodes worden ingezet om de lezer van de kaart te misleiden. Allereerst wordt vervorming van routelijnen gebruikt om de lezer te misleiden. De lange treinreis die de <span class="bedrijf">HS&N</span> maakt is vervangen door een rechte lijn. Dit suggereert dat de route korter en directer is dan dat deze daadwerkelijk is. Ook lijkt de route korter dan die van de concurrent. Als tweede zorgt het weglaten van dorpen waar de concurrent aanhaalt er voor dat er meer aandacht naar hun eigen route toe gaat. Als derde is hun route met een, in verhouding, dikkere zwarte lijn gemarkeerd. Dit wekt de suggestie dat deze route belangrijker is.</p>
+
+				<p>Alhoewel de vervorming voor een betere leesbaarheid van plaatsnamen op de kaart zorgt, beschrijft <span class="persoon">Mark Monmonier</span> de advertentie als ‘cartografische fictie’. Dit omdat <span class="city">West-Skelter</span> op de kaart verzwegen wordt en er een directe verbinding met de stad Skelter wordt gesuggereerd.<a href="#footnotes"><span class="footnote"></span></a></p>
+					
+
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+
+
+				<h1><a id="soortencartografen" name="1">Soorten cartografen</a></h1>
+				</br></br></br></br></br></br></br>
+
+				<p><span class="wegwijzer">In dit hoofdstuk wordt beschreven wie cartografische keuzes maken en hoe deze keuzes worden gemaakt. Dit wordt gedaan aan de hand van een kort overzicht van cartografische (technologische) ontwikkelingen. Hierna worden definities gegeven van de begrippen cartograaf, kaartenmaker en grafisch ontwerper. Vervolgens wordt de dynamische informatiemaatschappij beschreven om te begrijpen welke gevolgen deze keuzes kunnen hebben.</span></p>  
+
+				<h2><a id="#2.1" name="1">Technologische ontwikkelingen</a></h2>
+				<p><span class="wegwijzer">Om antwoord te kunnen geven op de vraag welke keuzes cartografen maken, wordt in dit subhoofdstuk aandacht besteed aan technologische ontwikkelingen. Technologie biedt keuzemogelijkheden voor cartografen met betrekking tot de productie van kaarten.</span></p>
+
+				<img class="imageprint" src="image/inuit.jpg"><img class="imageweb imageleft" src="image/inuit.jpg" onMouseOver="this.src='image/inuit.jpg'" onMouseOut="this.src='image/inuit.jpg'"/>
+				<span class="caption textleft">Ambamja. (z.j.). Ammassalik wooden maps: carved, tactile maps of the Greenlandic coastlines made by Inuit. Geraadpleegd van https://www.reddit.com/r/MapPorn/comments/2rb335/ammassalik_wooden_maps_carved_tactile_maps_of_the/</span>
+				<p>Cartografische ontwikkelingen hebben altijd in verband gestaan met technische ontwikkelingen, omdat techniek nodig is om kaarten te maken. In <span class="jaar">1885</span> brachten de <span class="persoon">Ammassalik Iniut</span> de kustlijnen van <span class="country">Groenland</span> in kaart door stukken hout te vormen naar de kustlijn. Hierdoor kon deze op tast herkend worden in donkere Arctische gebieden.<a href="#footnotes"><span class="footnote"></span></a> De inwoners van de <span class="country">Marshalleilanden</span> maakten met latten en schelpen kaarten om elkaar te leren over deiningen en stromingen tussen eilanden.<a href="#footnotes"><span class="footnote"></span></a> Dit zijn twee voorbeelden van de eerste technieken waarmee kaarten gevormd werden.</p>
+
+				<p><span class="persoon">Köbben & van Eck</span> beschrijven de drukkunst als een belangrijke technische ontwikkeling voor cartografie. Deze uitvinding maakte massaproductie mogelijk. Dit droeg bij aan de toegankelijkheid van drukwerk, zoals manuscripten en bijzondere kaarten.<a href="#footnotes"><span class="footnote"></span></a> Een voorbeeld hiervan is de <span class="kaart">Atlas Maior</span> uit <span class="jaar">1662</span>. Deze atlas was vanwege de prijs in eerste instantie alleen toegankelijk voor welgestelden en was daarom een statussymbool.<a href="#footnotes"><span class="footnote"></span></a> Toen later ook op Folio papierformaat kon worden gedrukt, zoals bij de kaart <span class="kaart">‘Leo Belgicus’</span>, werden kaarten toegankelijker voor een groter publiek. Ook dit is een belangrijke technologische ontwikkeling geweest voor de cartografie.</p>
+
+				<img class="imageprint" src="image/gis.jpg"><img class="imageweb imageleft" src="image/gis.jpg" onMouseOver="this.src='image/gis.jpg'" onMouseOut="this.src='image/gis.jpg'"/>
+				<span class="caption textleft">USGS. (2016, 24 augustus). GIS data layers visualization. Geraadpleegd van https://www.usgs.gov/media/images/gis-data-layers-visualization</span>
+				<p>Andere belangrijke technologische ontwikkelingen zijn geografische informatiesystemen (GIS). <span class="persoon">Köbben & van Eck</span> beschrijven GIS als computer gestuurde systemen die informatie gerelateerd aan locaties op aarde kunnen vastleggen, opslaan, controleren of verbeelden. Kaarten gemaakt door GIS worden aangedreven door achterliggende data. Hierdoor gedragen kaarten zich als geografische informatieoverdracht, en neemt cartografie een dynamische vorm aan.<a href="#footnotes"><span class="footnote"></span></a></p>
+
+				<p>Een voorbeeld waarbij moderne kaartenmakers en GIS worden gebruikt was de zoektocht naar de plek waar <span class="persoon">Osama Bin Laden</span> was gedood. Mensen gingen massaal naar <span class="bedrijf">Google Earth</span> om met behulp van geruchten en gelekte informatie de locatie van de bombardementen te lokaliseren. Hierbij werd gebruik gemaakt van de <span class="bedrijf">Historical Imagery Plugin</span>. Deze technologie maakt het mogelijk om geografische veranderingen chronologisch zichtbaar te maken. Door in een periode van een paar jaar foto’s van hetzelfde terrein te vergelijken, werden aanwijzingen gevonden die hebben geleid tot de lokalisering van zijn schuilplaats.<a href="#footnotes"><span class="footnote"></span></a></p>
+				<img class="imageprint" src="image/osama.jpg"><img class="imageweb imageleft" src="image/osama.jpg" onMouseOver="this.src='image/osama.jpg'" onMouseOut="this.src='image/osama.jpg'"/>
+				<span class="caption textleft">Nickolas, K. (z.j.). Osama bin Laden's hideout compound on Google Earth [schermafbeelding]. Geraadpleegd van http://networkcultures.org/longform/2016/10/07/google-earth-surveillance-and-the-power-of-digital-cartography/</span>
+
+				<p>Door automatisering in de <span class="jaar">jaren ’80</span> werden GIS toegankelijker voor een groot publiek. Hierdoor ontstonden mogelijkheden voor individuen, groepen of instanties om (on)gerelateerde data te analyseren door het vergelijken van verschillende informatiebronnen. Informatie van populatie, educatie en inkomen kan worden vergeleken met landschapsinformatie zoals bodemtype, wegennet of een elektriciteitsnetwerk. Dit biedt mogelijkheden om ruimtelijke situaties, relaties, gebieden en patronen beter te begrijpen.<a href="#footnotes"><span class="footnote"></span></a></p>
+
+				<p><span class="persoon">Caitlin Dempsey</span> beschrijft GIS als moderne verlengstukken van traditionele cartografische documenten. <span class="argument">Ze beschrijft dat zowel traditionele kaarten als GIS beide een onderliggende kaart hebben waarop informatie kan worden toegevoegd. <span class="persoon">Dempsey</span> beschrijft als verschil dat cartografen bij GIS eindeloze hoeveelheden aan informatie kunnen toevoegen.</span><a href="#footnotes"><span class="footnote"></span></a> Dit kan bij traditionele cartografie niet.</p>
+
+				<p>Online kaarten werden in eerste instantie gezien als objectieve technologie, maar later zagen geografen dat deze online kaarten ook beïnvloed zijn door cultuur en ideologie, wat de kaarten vooringenomen maakt, aldus <span class="persoon">Velho Diogo</span>.<a href="#footnotes"><span class="footnote"></span></a> <span class="persoon">John Noble Wilford</span> stelt dat door digitalisering de productiewijze van kaarten verandert. De eenvoud van digitalisering zorgt voor een eenvoudige analyse van informatie en kaarten kunnen gemakkelijk gegenereerd worden. Omdat cartografen minder tijd hoeven te besteden aan zaken als archiveren, bleef er meer tijd over om aandacht te besteden aan de ontwerpen van kaarten.<a href="#footnotes"><span class="footnote"></span></a></p>
+
+
+				<h2><a id="#2.2" name="1">Verschillende kaartenmakers</h2>
+				<p><span class="wegwijzer">Er zijn diverse personen die zich bezig houden met het maken van kaarten. Om in beeld te brengen hoe zij kaarten maken en welke keuzes ze in dat proces maken, wordt in dit subhoofdstuk beschreven wie zij zijn.</span></p>
+
+				<h3>De cartograaf</h3>
+				<img class="imageprint" src="image/jvermeer.jpg"><img class="imageweb imageleft" src="image/jvermeer.jpg" onMouseOver="this.src='image/jvermeer.jpg'" onMouseOut="this.src='image/jvermeer.jpg'"/>
+				<span class="caption textleft">Vermeer, J. (1669). De Geograaf [schilderij]. Geraadpleegd van https://nl.wikipedia.org/wiki/De_geograaf</span>
+
+				<p>Volgens de <span class="bedrijf">Van Dale</span> is cartografie <span class="regQuote">“(leer van) het vervaardigen van land-, zee- en luchtkaarten, atlassen, plattegronden enz.”</span>.<a href="#footnotes"><span class="footnote"></span></a> De cartograaf staat vervolgens beschreven als <span class="regQuote">“kaarttekenaar van land- en zeekaarten”</span> en als <span class="regQuote">“iemand die zich met cartografie bezighoudt”</span>.<a href="#footnotes"><span class="footnote"></span></a> Wanneer de cartograaf een kaart wil produceren is hier geografische informatie voor nodig. Geografie staat in de <span class="bedrijf">Van Dale</span> beschreven als <span class="regQuote">“wetenschap die zich bezighoudt met ruimtelijke orde in de fysische en sociale verschijnselen van en op het aardoppervlak”</span><a href="#footnotes"><span class="footnote"></span></a> en de geograaf als <span class="regQuote">“beoefenaar van de geografie”</span>.<a href="#footnotes"><span class="footnote"></span></a> Geografie en cartografie zijn onderling verbonden, de geograaf voorziet de cartograaf van informatie.</p>
+
+				<p><span class="regQuote">“Ooit waren geografen ontdekkerreizigers die ‘onbewoonde’ gebieden in kaart brachten en claimden voor de machthebbers.”</span>, aldus <span class="persoon">Virginie Mamadouh</span>.<a href="#footnotes"><span class="footnote"></span></a> Cartografen produceerden voornamelijk kaarten, zoals atlassen en bijbels, voor de welgestelden waarmee ze bijdroegen aan educatie op die kennisgebieden.</p>
+
+				<p>Volgens <span class="persoon">J.B. Harley</span> zijn kaarten in hun natuurlijke vorm interpreteerbaar als weerspiegelingen van gedeeltes van de echte wereld, een soort maatschappelijke sociale vertegenwoordiging van de werkelijkheid. Hij zegt: <span class="regQuote">“Far from holding up a simple mirror of nature that is true or false, maps redescribed the world—like any other document—in terms of relations of power and of cultural practices, preferences, and priorities.”</span><a href="#footnotes"><span class="footnote"></span></a> Dit suggereert dat cartografen de sociale wereld interpreteren en deze weerspiegelen door deze in kaart te brengen.
+				</br>
+				<span class="persoon">Janet Abrams</span> en <span class="persoon">Peter Hall</span> stellen dat in het informatietijdperk, het in kaart brengen een methode is geworden om complexe informatie toegankelijk te maken, het verborgen zichtbaar, en het niet-in-kaart-te-brengen in kaart te brengen.<a href="#footnotes"><span class="footnote"></span></a> De cartograaf maakt complexe informatie begrijpelijk voor een groot publiek en brengt nieuwe informatie in kaart.</p>
+
+
+
+				<h3>De (moderne) kaartenmaker</h3>
+				<img class="imageprint" src="image/thomasvlinge.jpg"><img class="imageweb imageleft" src="image/thomasvlinge.jpg" onMouseOver="this.src='image/thomasvlinge.jpg'" onMouseOut="this.src='image/thomasvlinge.jpg'"/>
+				<span class="caption textleft">Schrank, J. (2015, 19 augustus). The Dutch Teen Who Maps the Jihadists [foto]. Geraadpleegd van http://www.spiegel.de/international/world/how-thomas-van-linge-mapped-islamic-state-a-1048665.html</span>
+
+				<p><span class="persoon">Crampton & Krygier</span> stellen in het artikel <span class="titlereference">‘An Introduction to Critical Cartography’</span> uit <span class="jaar">2005</span> dat cartografie niet langer in handen is van de dominante elite, zoals de grote westerse kaartenuitgeverijen, maar dat dit nu voor iedereen met een computer met internetverbinding toegankelijk is.<a href="#footnotes"><span class="footnote"></span></a>
+				</br>
+				<span class="persoon">J. Abrams</span> en <span class="persoon">P. Hall</span> stellen dat door de toegankelijkheid van GIS een nieuwe generatie voortkwam, namelijk de gebruiker als cartograaf. Deze cartografen, ook wel moderne kaartenmakers genoemd, zijn niet als cartograaf opgeleid in de traditionele zin en werken vaker in groepen dan als individu.<a href="#footnotes"><span class="footnote"></span></a>
+				</br>
+				<span class="persoon">Crampton & Krygier</span> verwachtte dat toen kaarten maken toegankelijker werd voor een groot onopgeleid publiek, dit de positie van de kaart zou verzwakken, maar het tegenovergestelde gebeurde.<a href="#footnotes"><span class="footnote"></span></a>
+				</br>
+				Een voorbeeld van een moderne kaartenmaker is <span class="cartograaf">Thomas van Linge</span>. <span class="persoon">Hofman</span> en <span class="persoon">van Houtum</span> beschreven <span class="cartograaf">Van Linge</span> in <span class="bedrijf">de Correspondent</span> als: <span class="regQuote">“een student met een obsessie en veel tijd.”</span><a href="#footnotes"><span class="footnote"></span></a>
+				</br>
+				<span class="persoon">Köbben</span> & <span class="persoon">van Eck</span> vinden ook dat thuisgebruikers kaartenmakers zijn. Zij zijn van mening dat dit hetzelfde is als cartograaf, omdat het woord cartograaf letterlijk kaartenmaker betekent.<a href="#footnotes"><span class="footnote"></span></a>
+				</p>
+
+
+				<h3>De grafisch ontwerper</h3>
+				<img class="imageprint" src="image/jgmapgd.jpg"><img class="imageweb imageleft" src="image/jgmapgd.jpg" onMouseOver="this.src='image/jgmapgd.jpg'" onMouseOut="this.src='image/jgmapgd.jpg'"/>
+				<span class="caption textleft">Van Susteren, A. (2005). Metropolitan World Atlas [foto van boek, ontworpen door Studio Joost Grootens]. Geraadpleegd van https://www.monsterkamer.nl/2012/12/01/joost-grootens-over-papier/</span>
+
+				<p>Grafisch ontwerpers zijn niet traditioneel geschoold als geograaf of cartograaf, maar spelen vaak een rol als kaartenmaker. Volgens de website van de <span class="bedrijf">Koninklijke Academie van Beeldende Kunsten</span>, worden grafisch ontwerpers getraind om kritische denkers en multidisciplinaire ontwerpers te worden, die concepten kunnen ontwikkelen voor visuele communicatie.<a href="#footnotes"><span class="footnote"></span></a> Kaarten zijn hier voorbeelden van. Een grafisch ontwerper die onder andere kaarten maakt is <span class="persoon">Joost Grootens</span>.<a href="#footnotes"><span class="footnote"></span></a></p>
+
+				<p>Omdat de beroepstitel ontwerper niet beschermd is, kan iedereen zich ontwerper kan noemen. De opleiding, achtergrond en daarmee kwaliteit van de ontwerper kan erg verschillen. Dit heeft invloed op de kwaliteit van een kaart. 
+
+				<img class="imageprint" src="image/Fiverr.jpg"><img class="imageweb imageleft" src="image/Fiverr.jpg" onMouseOver="this.src='image/Fiverr.jpg'" onMouseOut="this.src='image/Fiverr.jpg'"/>
+				<span class="caption textleft">Van Brunschot, T. (2018, 7 januari). Schermafbeelding Fiverr aanbieding [foto].</span>
+
+				Op <span class="bedrijf">Fiverr (marktplaats voor diensten)</span> worden diensten, zoals het maken van vector-kaarten, al vanaf €13.38 aangeboden.<a href="#footnotes"><span class="footnote"></span></a>
+				</br>
+				<span class="bedrijf">Silvio Lorusso</span> schrijft dat onder andere deze grafisch ontwerpers het grafische werkveld vervuilen en indirect zorgen voor een expressieve tegenreactie. Hij beschrijft die tegenreactie van geschoolde grafisch ontwerpers als het innemen van intellectuelere rollen.<a href="#footnotes"><span class="footnote"></span></a> <span class="persoon">Lorusso</span> onderbouwt zijn standpunt met een foto van een lezing van <span class="persoon">Peter Biľak</span>, waar onder andere deze tekst te lezen is: <span class="regQuote">“Designer as bullshitter. Designer as importer. Designer as mob boss”</span>.<a href="#footnotes"><span class="footnote"></span></a></p>
+
+				<p>Omdat kaartenmakers en sommige grafische ontwerpers niet opgeleid zijn om kaarten te maken, maken zij keuzes in het ontwerpproces waarbij zij zich niet bewust zijn van de gevolgen voor de lezer. Lezers kunnen hierdoor ongewild en onbewust beïnvloed worden.</p>
+
+
+				<h2><a id="#2.3" name="1">Dynamische Informatiemaatschappij</a></h2>
+
+				<p><span class="wegwijzer">Dit subhoofdstuk gaat in op de rol van de maatschappij bij de interpretatie van kaarten door lezers. De maatschappij heeft invloed op hoe cartografische keuzes door lezers vertaald worden.</span></p> 
+
+				<p>Het delen van informatie gebeurt sneller dan ooit tevoren. Zo worden artikelen direct na publicatie gelezen door een cultureel divers publiek. In de dynamische informatiemaatschappij is informatie op elke plaats en ieder moment van de dag voor iedereen toegankelijk. Wanneer kaarten door mensen uit verschillende culturen worden gelezen, is er sprake van lezersdiversiteit. Mensen met een verschillende achtergrond zullen de informatie op een andere manier en met hun eigen opvattingen interpreteren. Als de boodschap op de verschillende lezers anders over komt dan de maker bedoeld heeft, kan dit voor problemen zorgen.</p>
+
+				<p>Kaarten bevinden zich onder andere in bushokjes, in metro’s, op internet, in winkelcentra, kranten of op televisie. <span class="persoon">Edoardo Boria</span> stelt dat geografen, juist in het tijdperk dat gekenmerkt wordt door de toename van het gebruik van beelden, een aarzelende houding lijken te hebben met betrekking tot het gebruik van kaarten. Juist nu de productie, door technologische ontwikkelingen, sneller en gemakkelijker verloopt dan ooit.<a href="#footnotes"><span class="footnote"></span></a></p>
+
+				<p>In de dynamische informatiemaatschappij maken cartografen, kaartenmakers en grafisch ontwerpers, allemaal met eigen achtergronden, kaarten voor lezers uit verschillende culturen. lezers interpreteren kaarten op hun eigen manier en deze interpretatie kan anders zijn dan de maker bedoeld heeft.</p>
+
+					
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+
+
+
+				<h1><a id="kritiekgeven" name="1">Critique</a></h1>
+				</br></br></br></br>
+				<p><span class="wegwijzer">Achter kaarten gaan (on)bewuste machtsverbanden schuil die lezers (on)bewust kunnen beïnvloeden. In dit hoofdstuk wordt beschreven hoe cartografen en kaartenmakers beter en bewuster cartografische keuzes kunnen maken. Er wordt beschreven wat een critique is en hoe deze geleverd kan worden, om eventuele negatieve gevolgen bij lezers te verminderen.</span></p>
+
+				<h3>Critique</h3>
+				<p><span class="persoon">Kant</span> beschrijft een critique als onderzoek dat bepaalde stellingen en aannames analyseert door die duidelijk en concreet te formuleren. Alleen dan zouden stellingen geëvalueerd kunnen worden in verhouding tot hun originele betekenis en bedoeling.<a href="#footnotes"><span class="footnote"></span></a> <span class="persoon">De Frankfurter Schule</span> gebruikte critique om de maatschappij te behoede tegen schadelijke en bedrieglijke ideologieën, door aan te sturen op een filosofie die beperkingen vrij maken bevordert. Ze paste critique toe door bestaande machtsstructuren uit te dagen met kritische theorie tegen de maatschappij.<a href="#footnotes"><span class="footnote"></span></a> <span class="persoon">Michel Foucault</span> beschreef critique niet als verzamelen van kennis, maar als een houding waarin we grenzen die ons worden opgelegd, analyseren. Tegelijk biedt het mogelijkheid om die opgelegde grenzen te verleggen.<a href="#footnotes"><span class="footnote"></span></a></p>
+
+				<h3>Een cartografische critique</h3>
+				<p><span class="persoon">Crampton & Krygier</span> definiëren critique binnen cartografie als ‘critical cartography’. Zij beschrijven dit niet als het vinden van een fout of probleem, maar als het proces van toetsen van aannames binnen kennisgebieden om de totstandkoming van deze kennisgebieden te tonen en mogelijk alternatieven voor te stellen.<a href="#footnotes"><span class="footnote"></span></a> Met deze kennisgebieden bedoelen zij veronderstellingen en bekende begrippen die kennis vormen en mogelijk maken. <span class="persoon">Crampton & Krygier</span> bedoelen met critique dus niet een specifiek project, maar de ‘politiek van kennis’.</p>
+
+
+				<p>Hierbij onderzoekt men allereerst de basis van onze kennis, waarop keuzes worden gebaseerd. Daarna toetsen we vanuit een historische invalshoek de relatie tussen macht en kennis. Vervolgens verzet het zich tegen bestaande kennisgebieden, daagt het deze uit of probeert het deze omver te werpen. 
+				</br>
+				Volgens <span class="persoon">Crampton & Krygier</span> wordt critique zo dus, als het verandering in kennisgebieden teweegbrengt, een politieke interventie. Daarnaast streeft een critique naar de 'waarheid van kennis’, die onder bepaalde condities is ontstaan, en onderzoekt het of het mogelijk te maken heeft met macht.<a href="#footnotes"><span class="footnote"></span></a></p>
+
+				<p>Critique kan bestaande kennis, zoals politieke en sociale constructies, vragen stellen die het bestaan en de geldigheid, waarop besluiten worden genomen, bevragen. Critique probeert veronderstellingen en bekende begrippen binnen kennis te begrijpen en te bekijken of die correct zijn.</p>
+
+				<h3>Critique leveren</h3>
+				<p><span class="persoon">Miggelbrink Schlottmann</span> beschrijft dat geografie als discipline voornamelijk beelden gebruikt en stelt dat er geen echte pogingen zijn om visuele theorieën te ontwikkelen.<a href="#footnotes"><span class="footnote"></span></a> Kortom, deze visuele theorieën moeten gestimuleerd worden.
+				</br>
+				<span class="persoon">Lennart Hofman</span> & <span class="persoon">Remmelt de Weerd</span> schrijven: <span class="regQuote">“Het hoogst haalbare van een kaart is daarom dat alle betrokken partijen het met elkaar eens zijn dat dit een in hoge mate getrouwe weergave is. Zo democratisch wordt het echter nooit. En zeker niet in een conflict.”</span><a href="#footnotes"><span class="footnote"></span></a></p>
+
+
+
+
+				<img class="imageprint" src="image/spreadJG.png"><img class="imageweb imageleft" src="image/spreadJG mono.png" onMouseOver="this.src='image/spreadJG.png'" onMouseOut="this.src='image/spreadJG mono.png'"/>
+				<span class="caption textleft">[Pagina: Atlas of the Conflict, Israel-Palestine]. (z.j.). Geraadpleegd van https://www.bestverzorgdeboeken.nl</span>
+
+				<p>Ontwerper <span class="persoon">Joost Grootens</span> maakt voornamelijk cartografisch boeken, atlassen en indexen. Voor in het door hem ontworpen boek <span class="titlereference">'Atlas of the Conflict, Israel-Palestine’</span> wordt uitleg gegeven over kleurgebruik van territoria, de structuur en ontwerp van het boek. Normaal kleurgebruik voor de markering van territoria zou onvoldoende zijn vanwege de rollen van kleuren in het conflict. <span class="country">Israël</span> <span class="kleur">(blauw)</span>, <span class="country">Palestina</span> <span class="kleur">(bruin)</span> en neutraal of onbekend territoria <span class="kleur">(zwartgrijs)</span> hebben tegenovergestelde kleurassociaties, die bepalend zijn bij interpretatie van het conflict. Deze verschillen van rust, vrede, vertrouwen en wilskracht <span class="kleur">(blauw)</span> tot eenvoud, dofheid en saaiheid <span class="kleur">(bruin)</span>.<a href="#footnotes"><span class="footnote"></span></a> Hoewel het positief is dat er in de legenda uitleg wordt gegeven over kleuren en ontwerpstructuur, laat het nog veel te wensen over. Er wordt namelijk niet geschreven over keuzes met betrekking tot de projectie, de subjectiviteit van de symboliek of iconografie, de culturele kleurenwaarden van de maker en typografie.</p>
+
+
+
+				<img class="imageprint" src="image/wveiligheid03.gif"><img class="imageweb imageleft" src="image/wveiligheid03 mono.gif" onMouseOver="this.src='image/wveiligheid03.gif'" onMouseOut="this.src='image/wveiligheid03 mono.gif'"/>
+				<span class="caption textleft">Untold Stories + Datagraver. (2017). De wereld is onveilig?. Geraadpleegd van http://www.stemmingmakerij.net/</span>
+
+				<p><span class="bedrijf">Stemmingmakerij</span> is een project door <span class="bedrijf">Untold Stories</span> en <span class="bedrijf">Datagraver</span>. In dit project gaan ze emotionele uitspraken door politieke partijen aan door ze te confronteren met feiten. Wat betreft redenatie gaan ze een stap verder. Het ontwerp en formaat is gekozen vanwege herkenbaarheid en toegankelijkheid voor een breed publiek. Het heeft geen politieke verbintenis, intellectualiteit, maar is ook niet te simpel. De <span class="kleur">paarsblauwe</span> kleur is gekozen omdat geen politieke partij deze kleur gebruikt. Het lettertype Pressuru is gekozen vanwege de gelijkenis met het meme lettertype Impact.<a href="#footnotes"><span class="footnote"></span></a> Het is positief dat de keuze van formaat, kleur en lettertype worden beargumenteerd. <span class="praktisch">Desalniettemin wil ik op cartografisch gebied aansturen op het uitgebreider beschrijven van basisargumenten om duidelijkheid te creëren over uitgangspunten van de maker. Hierdoor wordt er een discussie gecreëerd over cartografische keuzes, de effecten van deze keuzes en interpretaties van kaarten. Zo wordt een tegenbeweging gevormd die iets kan doen tegen onbewuste interpretatie van kaarten.</span></p>
+					
+
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+
+
+
+<!-- <span class="footnote">
+<span class="haha">
+praktisch, gebleken, persoon, kleur, titlereference, city, jaar, country, 
+kaart, projection, regQuote, tegengeluid, argument, gebeurtenis, bedrijf -->
+
+
+				<h1><a id="conclusie" name="5">Conclusie</a></h1>
+				</br></br></br></br>
+				<p>In dit onderzoek is gezocht naar antwoorden op de vragen: <i>‘Welke grafische keuzes maken cartografen (bewust of onbewust)?’</i>, <i>‘Wat voor nadelige effecten kunnen deze keuzes hebben?’</i> en <i>‘Kunnen cartografen daar iets tegen doen?’</i>. Hiervoor is een kwalitatief onderzoek uitgevoerd naar verschillende aardrijkskundige kaarten, hun voornaamste grafische elementen en hoe deze de interpretatie van lezers beïnvloeden. Ook is er gekeken wat er door cartografen gedaan kan worden om de (nadelige) beïnvloeding door keuzes tegen te gaan.</p>
+
+				<p>Mijn beginstandpunten ten aanzien van de onderzoeksvragen waren ten eerste dat (ontwerp)keuzes van cartografen de interpretatie van lezers (nadelig) beïnvloeden. Ten tweede moeten cartografen lezers informeren over hun standpunten en de keuzes die zij maken met betrekking tot de productie van kaarten. Dit omdat de lezer zich niet standaard bewust is van die nadelige invloed. Als derde moeten cartografen zich tijdens het productieproces bewust zijn van de invloed die hun keuzes mogelijk uitoefenen. Als laatste was ik van mening dat juist grafisch ontwerpers moeten nadenken over zulke keuzes en de gevolgen die ze uitoefenen.</p>
+
+				<p><span class="gebleken">Uit het onderzoek is gebleken dat cartografen veel keuzes maken in het productieproces van aardrijkskundige kaarten. Allereerst is gebleken dat projecties uiteenlopende sociale en maatschappelijke consequenties hebben.</span> Cartografen kunnen dit inzetten om lezers te beïnvloeden. Het gedeeltelijk bedekken van informatie is ook een middel om de lezer te beïnvloeden. De cartograaf kan zijn standpunt hier visueel mee onderbouwen. Ook kleurgebruik, teksten, en de positie en houding van elementen, zoals vormen van landen, kunnen door een cartograaf worden ingezet om een lezer te overtuigen van zijn standpunt. Hierdoor kan de boodschap van de kaart versterkt of verzwakt worden. Daarnaast kan een cartograaf er voor kiezen om informatie selectief weer te geven, bijvoorbeeld door specifieke informatie te verplaatsen, weg te laten of aan te geven. Door suggestieve symbolen te gebruiken op kaarten, kan een cartograaf de illusie wekken dat er een actie of beweging plaatsvindt, denk bijvoorbeeld aan een verplaatsing van troepen. Informatie uit religieuze bronnen wordt snel voor waar aangenomen. Door bewust religieuze informatie in kaarten te verwerken, beïnvloeden cartografen gelovige lezers.</p>
+
+				<p>Bovenstaande keuzes kunnen de interpretatie en meningsvorming van lezers (nadelig) beïnvloeden. <span class="gebleken">Er is gebleken dat door cartografische keuzes lezers een vooringenomen en subjectieve weergave van de werkelijkheid voorgeschoteld krijgen.</span> Dit wordt gedaan door eenzijdige en partijdige informatie te geven over een situatie. Het gebruik van suggestieve symbolen heeft als gevolg dat illusies gewekt worden, zoals de illusie dat een treinreis korter duurt dan deze daadwerkelijk is. Vergroting of vervorming van territoria, maar ook selectieve informatie kan er voor zorgen dat de lezers een vooringenomen (positief of negatief) beeld vormen over bijvoorbeeld bevolkingsgroepen of immigranten in een situatie. Daarnaast werkt het verplaatsen van informatie misleidend.</p>
+				
+				<p>Zowel lezers als cartografen kunnen iets tegen de nadelige beïnvloeding doen. Critique leveren is een methode om iets tegen de gevolgen van vooringenomen kaarten te doen. Dit forceert zowel de lezers, als cartografen en kaartenmakers om belangrijke vragen te stellen die de geldigheid en het bestaansrecht van kaarten onderzoeken. Dit draagt bij aan kennisvorming, maakt cartografen bewust van hun keuzes, en bestrijdt daardoor de gevolgen van onbewuste keuzes door cartografen en kaartenmakers.</p>
+
+				<p>Na dit onderzoek zijn mijn vier standpunten versterkt. Cartografen en kaartenmakers staan voor tal van keuzes die direct en indirect effect hebben op de interpretatie van kaarten. Cartografen moeten lezers beter informeren over hun standpunten en hun keuzes en de invloed die deze hebben. Juist grafisch ontwerpers moeten nadenken over de gevolgen van deze keuzes. Ik had van tevoren verwacht dat er meer empirisch onderzoek gedaan zou zijn naar dit onderwerp. Om onbewuste en verkeerde interpretatie van vooringenomen kaarten tegen te gaan, moeten cartografen en kaartenmakers hun basisargumenten en standpunten expliciet maken en critique leveren om bewust te worden en kennis te vormen. Lezers moeten kritischer kijken naar cartografische informatie (auteur, bronvermelding en grafische elementen) en zich er bewust van zijn dat kaarten soms vooringenomen zijn.</p>
+
+				<p><span class="argument">Dit onderzoek geeft aan dat de interpretatie van kaarten eenvoudig te beïnvloeden is. Dit betekent niet dat er geen kaarten meer gemaakt of gebruikt zullen worden. Cartografen moeten kaarten blijven maken en lezers moeten kaarten blijven lezen.</span></p>
+
+				<p><span class="persoon">Remmelt de Weerd</span> en <span class="persoon">Lennart Hofman</span> schrijven: <span class="regQuote">“De wereld is complexer dan een indeling in grenslijntjes en kleurtjes.”</span><a href="#footnotes"><span class="footnote"></span></a></p>
+					
+
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+
+
+				<h1><a id="bijlage" name="6">Bijlage</a></h1>
+				</br></br></br></br>
+				<h2>Bijlage 1: Projecties</h2>
+				<p><span class="persoon">John Milnor</span> beschrijft in <span class="titlereference">'A Problem in Cartography’</span> dat cartografie een algemeen probleem heeft. Volgens <span class="persoon">Milnor</span> zijn dit projecties en kunnen er misvormingen en vervormingen ontstaan en oppervlaktes van landen groter of kleiner uitvallen dan dat ze daadwerkelijk zijn.<a href="#footnotes"><span class="footnote"></span></a> Deze gevolgen kunnen de meningsvorming van de lezer beïnvloeden en dragen zo bij aan de vooringenomenheid van kaarten.
+				</br>
+				De projectiekeuze zorgt er voor dat bepaalde karakteristieken zichtbaar worden of juist naar de achtergrond verdwijnen. Alle projecties geven dus op de één of andere manier vervorming van de werkelijkheid weer. Geen enkele projectie is correct.
+				</br>
+				In essentie kan dat betekenen dat sommige projecties, en uiteindelijk dus kaarten, vooringenomen kunnen zijn. Gebieden kunnen vergroot, verkleind of misvormd lijken. Het gevaar hierbij is dat lezers projecties te zien krijgen en deze als waar beschouwen, zonder kennis over de eigenschappen van de projectie. Dit kan hun wereldbeeld over onderwerpen doen veranderen.
+				</p>
+
+
+
+				<h3>Parallellen</h3>
+				<img class="imageprint" src="image/PARALLELSMERIDIANS.gif"><img class="imageweb imageleft" src="image/PARALLELSMERIDIANS.gif" onMouseOver="this.src='image/PARALLELSMERIDIANS.gif'" onMouseOut="this.src='image/PARALLELSMERIDIANS.gif'"/>
+				<span class="caption textleft">Parallels or lines of latitude are horizontal lines. (z.j.). Geraadpleegd van http://socialstudiesandenglish4.blogspot.nl/p/unit-1.html</span>
+				<p>Parallellen worden breedtecirkels genoemd. Dit zijn denkbeeldige horizontale cirkels op het aardoppervlakte die van oost naar west lopen. De evenaar is zo een parallel en wordt de grootcirkel genoemd. De evenaar ligt op 0° en scheidt het noordelijk van het zuidelijk halfrond. De overige parallellen worden kleincirkels genoemd.</p>
+
+				<h3>Meridianen</h3>
+				<p>Meridianen worden verticale lengtecirkels genoemd. De nulmeridiaan ligt op 0° en de overige meridianen lopen parallel van noord naar zuid, maar staan haaks op de evenaar. In <span class="jaar">1884</span> werd de Meridiaan van <span class="city">Greenwich</span> wereldwijd verkozen als officiële nulmeridiaan.</p>
+
+
+				<p>De afstanden tussen alle meridianen en tussen alle parallellen (x-as en y-as) worden in lengte- en breedtegraden uitgedrukt. Deze worden daarna onderverdeeld in minuten en daarna seconden. 
+				</br>
+				Rond de evenaar en de nulmeridiaan is de aarde op beide assen te verdelen in 360°, op elke helft 180°. Deze helften worden aangeduid van 0°-180° ooster- of westerlengte.</p>
+
+
+				<img class="imageprint" src="image/projection.jpg"><img class="imageweb imageleft" src="image/projection.jpg" onMouseOver="this.src='image/projection.jpg'" onMouseOut="this.src='image/projection.jpg'"/>
+				<span class="caption textleft">Monmonier, M. (1996). Figure 2.3. Developable surfaces in the second stage of map projection. Geraadpleegd van How to Lie with Maps. pp. 10</span>
+
+				<p>De wiskundige vertalingen van de ‘perfect bol’ naar een plat stukje papier kunnen op verschillende manieren worden uitgevoerd. Deze kunnen onder andere berekend worden naar een vel via een cilinder of een kegel. Hierbij zijn de zogenaamde referentiepunten van 0° de punten vanwaar de berekening start.</p>
+
+				<p>Doordat de referentiepunten als beginpunt kunnen verschillen bij een berekening voor een projectie, verschillen de resultaten ook behoorlijk. Hierdoor zal de verhouding van de aarde vervormd worden, zoals de afstandsgetrouwheid, de hoeks-getrouwheid en de relatieve grootte.</p>   
+
+				<p>Door de vele projecties kunnen cartografen aan de hand van verschillende redenen, kiezen voor een projectie die goed scoort op hun voorkeur. Deze eigenschappen kunnen standpunten van een sociale of politieke situatie versterken of juist afzwakken. Hieronder worden enkele voorbeelden per type projectie beschreven. De <span class="projection">cilinderprojectie</span>, de <span class="projection">kegelprojectie</span>, de <span class="projection">azimutale projectie</span> en de <span class="projection">Dymaxion projectie</span> worden beschreven.
+				</p>
+
+				<h2>Cilinder projectie</h2>
+				<p>De <span class="projection">cilinder projectie</span> is de meest eenvoudige versie omdat de meridianen evenwijdig aan elkaar worden geplaatst. De parallellen staan haaks op de meridianen, maar de tussenruimte tussen de parallellen is verschillend qua grootte. De cilinder projectie resulteert altijd in een rechthoekig raster. Afhankelijk van het beginpunt van de berekening, kunnen de projecties verschillen wat betreft vervorming, relatieve grote en afstand.<a href="#footnotes"><span class="footnote"></span></a></p>
+
+
+				<h3>Mercator projectie</h3>
+				<img class="imageprint" src="image/mercator.png"><img class="imageweb imageleft" src="image/mercator.png" onMouseOver="this.src='image/mercator.png'" onMouseOut="this.src='image/mercator.png'"/>
+				<span class="caption textleft">Koenb.(2006, 25 November). Staatkundige kaart van de Wereld in Mercatorprojectie met kleuren die varieren met de breedtegraad. Geraadpleegd van https://commons.wikimedia.org/wiki/File:World_borders_mpr.png</span>
+				<p>De <span class="projection">Mercator projectie</span> is ontwikkeld door de <span class="country">Vlaamse</span> cartograaf <span class="cartograaf">Gerhard Mercator</span> in <span class="jaar">1569</span>. De <span class="projection">Mercator projectie</span> is veel gebruikt omdat kompasrichtingen als rechte lijnen worden weergeven en hij hierdoor goed te gebruiken is voor navigatie. Desalniettemin gaan deze voordelen ten koste van de vervorming van relatieve grootte, vooral bij de noord- en zuidpool.
+				<span class="persoon">David Turnbull</span> vraagt zich in het boek <span class="titlereference">‘Maps are Territories, Science is an Atlas’</span> af wat de ‘toevallige’ relatie is van de projectie, die voordelig werkt voor oceaan navigatie en de voornaamste zeegaande koloniale machten groots weergeeft.<a href="#footnotes"><span class="footnote"></span></a> <span class="country">Groot-Brittannië</span> en <span class="country">Europa</span> worden in verhouding tot de meeste gekoloniseerde landen relatief groot weergegeven.
+				<span class="persoon">Richard Edes Harrison</span> was in <span class="jaar">1943</span> kritisch tegenover de <span class="projection">Mercator projectie</span> en propageerde voor <span class="projection">azimutale projecties</span> als een betere projectie voor het gebruik van kaarten in tijden van (lucht)oorlog.<a href="#footnotes"><span class="footnote"></span></a>
+				</p>
+
+
+				<h3>Oppervlakte-getrouwe cilinderprojectie</h3>
+				<img class="imageprint" src="image/gallpeters.png"><img class="imageweb imageleft" src="image/gallpeters.png" onMouseOver="this.src='image/gallpeters.png'" onMouseOut="this.src='image/gallpeters.png'"/>
+				<span class="caption textleft">Koenb.(2006, 29 november). Staatkundige kaart van de Wereld in cilinderprojectie met kleuren die varieren met de breedtegraad, vertikaal verschaald t.o.v. de equivalente cilinderprojectie van Lambert (projectie van Gall-Peters). Geraadpleegd van https://nl.wikipedia.org/wiki/Projectie_van_Gall-Peters#/media/File:World_borders_cilv2.png</span>
+				<p>Een poging tegen de vooringenomen <span class="projection">Mercator projectie</span> is de <span class="projection">oppervlakte-getrouwe cilinderprojectie</span> van <span class="cartograaf">Arno Peters</span> die dateert uit <span class="jaar">1855</span>. Deze projectie is oppervlakte-getrouwer in vergelijking met de <span class="projection">Mercator projectie</span>, maar heeft hele grote vervormingen. Vooral <span class="bedrijf">NGOs</span>, maar ook <span class="bedrijf">publieke scholen uit Boston</span> gebruikte deze projectie omdat het oppervlakte realistischer is weergegeven in vergelijking met de <span class="projection">Mercator projectie</span>.<a href="#footnotes"><span class="footnote"></span></a></br>
+				Peters kreeg zelf veel kritiek uit de professionele cartografische wereld. <span class="persoon">Dhananjayan Sriskandarajah</span> beschreef dat het werk van <span class="cartograaf">Arno Peters</span> sinds <span class="jaar">1973</span> de professionele cartografische wereld teisterde en toonaangevende professionals gek werden van zijn werk. <span class="persoon">Sriskandarajah</span> stelt dat de toonaangevende cartografen zijn werk hypocriet vonden, omdat dit volgens hun niet vernieuwend, noch goede cartografie was. <span class="persoon">Sriskandarajah</span> beschrijft dat <span class="cartograaf">Arthur Robinson</span> bezwaar maakte tegen de <span class="projection">Gall-Peters projectie</span> door zijn projectie te associeren met ‘natte gerafelde lange winterkleding’ die aan de poolcirkel hangt uit te drogen.<a href="#footnotes"><span class="footnote"></span></a></p>
+
+				<h2>Kegelprojectie</h2>
+				<p>De <span class="projection">kegelprojectie</span> heeft zijn naam van de manier waarop de projectie wordt berekend, namelijk via een kegel om de aarde gevouwen. <span class="persoon">Lev M. Bugayevskiy</span> & <span class="persoon">John P. Snyder</span> beschrijven dat de parallellen worden weergegeven door bogen of concentrische cirkels en de meridianen door rechte lijnen die vanuit het middelpunt naar buiten lopen.<a href="#footnotes"><span class="footnote"></span></a>
+				</br>
+				Twee bekende conische projecties zijn <span class="projection">Albers oppervlaktegetrouwe kegelprojectie</span> en de <span class="projection">Lamberts hoekgetrouwe kegelprojectie</span>. Beide projecties zijn uitstekend voor het gebruik vanwege geringe vervorming bij oostelijke en westelijke gebieden. Een nadeel van deze projectie is dat vaak maar een deel van de hele planeet wordt weergegeven. </p>
+
+
+
+
+				<h3>Albers oppervlaktegetrouwe kegelprojectie</h3>
+				<img class="imageprint" src="image/World_borders_albers.png"><img class="imageweb imageleft" src="image/World_borders_albers.png" onMouseOver="this.src='image/World_borders_albers.png'" onMouseOut="this.src='image/World_borders_albers.png'"/>
+				<span class="caption textleft">Koenb.(2006, 24 december). Staatkundige kaart van de Wereld op basis van een oppervlaktegetrouwe kegelprojectie (schaalvaste parallellen: 45-22,5 en 45+22,5 graden) met kleuren die varieren met de breedtegraad. Geraadpleegd van https://nl.wikipedia.org/wiki/Oppervlaktegetrouwe_kegelprojectie#/media/File:World_borders_albers.png</span>				
+				<p><span class="cartograaf">Heinrich C. Albers</span> ontwikkelde in <span class="jaar">1805</span> de <span class="projection">oppervlaktegetrouwe kegelprojectie</span>. Kenmerken van deze projectie zijn het negeren van schaal en vorm en de minimale vervorming tussen de standaard parallellen.<a href="#footnotes"><span class="footnote"></span></a>
+				</br>
+				Hoewel de <span class="projection">kegelprojectie van Albers</span> niet veel gebruikt wordt, hanteren de <span class="country">Canadese provincies British Columbia<a href="#footnotes"><span class="footnote"></span></a> en Yukon</span> de projectie vanwege de ruimtelijke data. Volgens de <span class="country">provincie Yukon</span> is dit vanwege de minimale vervorming binnen de provincie en de volledige weergave van het territorium die door vier tijdzones gaat.<a href="#footnotes"><span class="footnote"></span></a></p>
+
+
+				<h3>Lamberts hoeksgetrouwe kegelprojectie</h3>
+				<img class="imageprint" src="image/lambert.png"><img class="imageweb imageleft" src="image/lambert.png" onMouseOver="this.src='image/lambert.png'" onMouseOut="this.src='image/lambert.png'"/>
+				<span class="caption textleft">Koenb.(2006, 26 december). Staatkundige kaart van de Wereld (afgekapt op 60 graden Zuiderbreedte) in Lamberts conforme kegelprojectie (afstandsware parallellen: 0 en 45 graden NB) met kleuren die varieren met de breedtegraad. Geraadpleegd van https://commons.wikimedia.org/wiki/File:World_borders_lambertcc000045.png</span>
+				<p><span class="cartograaf">Johann Heinrich Lambert</span> produceerde een <span class="projection">hoeksgetrouwe kegelprojectie</span> in <span class="jaar">1772</span>. Alhoewel <span class="cartograaf">Lambert</span> deze projectie al vroeg publiceerde, bleef deze vrijwel onbekend tot het begin van <span class="gebeurtenis">de Eerste Wereld Oorlog.</span>
+				</br>
+				<span class="persoon">Maarten Hooijberg</span> stelt dat deze projectie vaak gebruikt wordt wanneer cartografen kiezen voor een lange dimensie van oost naar west. Een nadeel is dat deze nadelig werkt bij grote breedtegraden. De meridianen worden weergeven door rechte lijnen die elkaar kruisen bij het niet-zichtbare gedeelte van de projectie met de parallellen.<a href="#footnotes"><span class="footnote"></span></a> <span class="persoon">Oscar S. Adams</span> beschrijft dat de <span class="projection">Lambert hoeksgetrouwe kegelprojectie</span> in <span class="country">Frankrijk</span> wordt gebruikt voor gevechtskaarten.<a href="#footnotes"><span class="footnote"></span></a></p>
+
+
+				<h2>Azimutale projectie</h2>
+				<p><span class="persoon">Bugayevskiy</span> en <span class="persoon">Snyder</span> stellen in <span class="jaar">1995</span> dat op <span class="projection">Azimutale projecties</span>, de parallellen worden weergegeven door concentrische cirkels. De meridianen worden weergegeven door rechte lijnen die in het midden van de concentrische cirkels elkaar kruisen. Deze projectie toont bij het centrale middelpunt bijna geen vervorming. Verder van het centrale middelpunt wordt de vervorming meer zichtbaar. <span class="projection">Azimutale projecties</span> worden vaak gebruikt voor kaarten met een kleinere schaal.<a href="#footnotes"><span class="footnote"></span></a></p>
+
+				<h3>Winkel Tripel projectie</h3>
+
+				<img class="imageprint" src="image/winkeltripel.png"><img class="imageweb imageleft" src="image/winkeltripel.png" onMouseOver="this.src='image/winkeltripel.png'" onMouseOut="this.src='image/winkeltripel.png'"/>
+				<span class="caption textleft">Koenb.(2006, 30 november). Staatkundige kaart van de Wereld in de Tripelprojectie van Winkel met kleuren die varieren met de breedtegraad. Geraadpleegd van https://nl.wikipedia.org/wiki/Winkel-tripelprojectie#/media/File:World_borders_winkel.png</span>
+
+				<p>De <span class="projection">Winkel Tripel projectie</span>, een bekende <span class="projection">azimutale projectie</span>, is niet oppervlakte- en hoeksgetrouw. 
+				</br>
+				De <span class="country">Duitse</span> cartograaf <span class="cartograaf">Oswald Winkel</span> ontwikkelde deze projectie in <span class="jaar">1921</span>. Omdat deze projectie geen uiterste heeft met betrekking tot voor- of nadelen, heeft de weergave een evenwichtige balans.  
+				</br>
+				Ontwerper <span class="persoon">Ruben Pater</span> beschreef deze projectie in <span class="jaar">2016</span> als <span class="regQuote">“The Safest Choice World Map”</span>.<a href="#footnotes"><span class="footnote"></span></a> <span class="bedrijf">National Geographic</span> heeft deze projectie in <span class="jaar">1998</span> gekozen voor de presentatie van de gehele wereld in haar atlassen vanwege de lage vervorming en de uitstekende kwaliteit, aldus <span class="persoon">Goldberg</span> en <span class="persoon">Gott</span>.<a href="#footnotes"><span class="footnote"></span></a>
+				</br>
+				<span class="persoon">Goldberg</span> en <span class="persoon">Gott</span> hebben de <span class="projection">Winkel Tripel projectie</span> vergeleken met andere projecties op de gebieden van vervorming, kleine afstandsfouten, oppervlaktefouten, kleine combinaties van de Tissot indicatrix en scheefheid. Hun toetsing toont dat <span class="projection">de Winkel-Tripel projectie</span> goed scoort in vergelijking met de andere geanalyseerde projecties. Alhoewel de <span class="projection">Winkel Tripel projectie</span> minimale vervorming toont bij beide polen, is deze vervorming geringer dan bij andere projecties.<a href="#footnotes"><span class="footnote"></span></a></p>
+
+				<h3>Dymaxion projectie</h3>
+				<img class="imageprint" src="image/Fuller_projection.png"><img class="imageweb imageleft" src="image/Fuller_projection.png" onMouseOver="this.src='image/Fuller_projection.png'" onMouseOut="this.src='image/Fuller_projection.png'"/>
+				<span class="caption textleft">Gaba, E. (2009, mei). Blank map of the world in an unfolded Fuller projection, also known as Dymaxion Air-Ocean World map. 1954 final version for an icosahedron, with folding lines. Geraadpleegd van https://commons.wikimedia.org/wiki/File:Fuller_projection.svg</span>
+
+				<p>De <span class="projection">‘Dymaxion’ projectie</span> is bedacht door <span class="cartograaf">Buckminster Fuller</span>. Bij deze eigenaardige projectie wordt het oppervlakte van de aarde geprojecteerd op een icosahedron (een vaste vorm met in totaal 20 driehoekige vlakken). Deze vorm kan daarna worden uitgevouwen tot een plat, tweedimensionaal vel. <span class="cartograaf">Fuller</span> probeerde met de <span class="projection">‘Dymaxion’ projectie</span>, net zoals <span class="cartograaf">Oswald Winkel</span> dat deed, zo min mogelijk vervorming en scheefheid te creëren, maar wel afstandsgetrouw te blijven, en zo het cartografische dilemma op te lossen. <span class="cartograaf">Fuller</span> wilde niet dat dit ten koste ging van één van de overige gebieden. Een nadeel van de projectie is dat deze onderbroken wordt vanwege de uitééngelegde driehoekige vormen.<a href="#footnotes"><span class="footnote"></span></a></p>
+
+
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+<!-- Nieuw Hoofdstuk -->
+
+
+				<h1><a id="bibliography" name="7">Bibliography</a></h1>
+				</br></br></br></br>
+				<div id="footnotes"></div>
+
+
+
 				<span class="breakbeforeimages"></span>
+
+				<img class="imageprint" src="image/borderlines-costa-blog427.jpg">
+				<span class="captionprint">Joe Burgess. <i>The New York Times.</i></span>
+
 
 				<img class="imageprint" src="image/Hizb_Al_Tahrirs_presence_worldwide.jpg"></br>
 				<span class="captionprint"><i>Hizb Al Tahrirs presence worldwide</i> Photo: Source.</span>
 
 
+				<p>
+				<span class="gebleken">Er is gebleken dat...</span></br>
+				<span class="argument">Krachtige onderbouwing</span></br>
+				<span class="tegengeluid">Tegengeluid, minder belangrijk maken</span></br>
+				<span class="regQuote">Quote</span></br>
+				<span class="praktisch">praktisch voorbeeld</span></br>
+
+				<span class="titlereference">Titel artikel/boek</span></br>
+				<span class="jaar">30 november 2012</span></br>
+				<span class="kaart">Titel kaart</span></br>
+				<span class="cartograaf">Naam Cartograaf</span></br>
+				<span class="auteur">Naam auteur</span></br>
+				<span class="city">New York</span></br>
+				<span class="country">Duitsland</span></br>
+				<span class="projection">Gall-Peters projectie</span></br>
+				<span class="kleur">Rode</span> kleur</br>
+				<span class="gebeurtenis">Tachtigjarige Oorlog</span>
+				</p>
 
 			</div>
-
 		</div>
 
-		<script src="sidebar.js" type="text/javascript"></script>
+		<!-- <script src="sidebar.js" type="text/javascript"></script> -->
+
 		<script type="text/javascript">
-			var span = $('#whatever');
-			var position = span.position();
-			console.log( "left: " + position.left + ", top: " + position.top );
+			// var span = $('#whatever');
+			// var position = span.position();
+			// console.log( "left: " + position.left + ", top: " + position.top );
+		</script>
+
+		<script type="text/javascript">
+			
+			const footnotes = [
+				{
+					"content" : "Jacobs, F. (2012, 28 februari). The First Google Maps War. The New York Times. The Opinion Pages. Geraadpleegd op 21 oktober 2017, van <u>https://opinionator.blogs.nytimes.com/2012/02/28/the-first-google-maps-war/</u>"
+				},
+				{
+					"content" : "Jacobs, F. (2012, 28 februari). The First Google Maps War. The New York Times. Geraadpleegd op 21 oktober 2017, van <u>https://opinionator.blogs.nytimes.com/2012/02/28/the-first-google-maps-war/</u>"
+				},
+				{
+					"content" : "Halliday, J. (2010, 15 november). Google Nicaraguan map error threatens to escalate into regional dispute. The Guardian. Geraadpleegd op 3 augustus 2017, van <u>https://www.theguardian.com/technology/2010/nov/15/google-map-dispute-nicaragua</u>"
+				},
+				{
+					"content" : "Harley beschrijft in 1989 in ‘Deconstructing the map’: <i>“It hides and denies its social dimensions at the same time as it legitimates.”</i>. J. B. Harley beschrijft één van de (interne) machtswerkingen van cartografie als het vervaardigen van macht en dat cartografen een ruimtelijk panopticum (kaart) scheppen waarin macht geabsorbeerd wordt. De kaart is in vanuit zichzelf politiek en staat direct in verbinding met de levens van mensen waarvan de gebieden vertoont worden op de kaart. Dit wordt een verlengsel van politiek schouwspel genoemd en hiermee kunnen mensen bespeeld worden.</br>J. B. Harley (1989). Deconstructing the Map. Reprinted from Cartographica, v. 26, n. 2 (Spring 1989). Via Michigan Publishing, University of Michigan Library. Geraadpleegd op 5 december 2017, van <u>http://hdl.handle.net/2027/spo.4761530.0003.008</u>"
+				},
+				{
+					"content" : "Pickles, J. (2004). <i>A History of Spaces, Mapping, Cartographic Reason, and the Geo-Coded World.</i> Londen, Verenigd Koninkrijk: Routledge."
+				},
+				{
+					"content" : "Kaart. (2015). <i>Groot woordenboek van de Nederlandse taal, i-q</i> (15e ed.). Utrecht, Nederland: Van Dale."
+				},
+				{
+					"content" : "Karen Mulcahy, A., & Keith Clarke, C. (2001). <i>Symbolization of Map Projection Distortion: A Review.</i> Cartography and Geographic Information Science, Vol. 28 (No. 3), 167-168. doi: 10.1559/152304001782153044"
+				},
+				{
+					"content" : "Lewis, M. W. (2014, 18 september). The Islamic State’s Aspirational Map?. Geraadpleegd op 23 september 2017, van <u>http://www.geocurrents.info/geopolitics/self-declared-states-geopolitics/islamic-states-aspirational-map</u>"
+				},
+				{
+					"content" : "Holmes, R. (2015, 17 april). Why blue is the costliest colour. Geraadpleegd op 25 oktober 2017, van <u>https://www.theguardian.com/lifeandstyle/2015/apr/17/colour-blue-rich-divine-ancient-egyptians-virgin-mary</u>"
+				},
+				{
+					"content" : "Azieb Pool, H. (2015, 17 juni). Think pink! How did one colour come to mean so much?. Geraadpleegd op 25 oktober 2017, van <u>https://www.theguardian.com/commentisfree/2015/jun/17/pinks-my-favourite-colour-does-that-make-me-a-bad-feminist</u>"
+				},
+				{
+					"content" : "Itten, J. (2000). <i>Kunst en Kleur: Een kleurenleer over het subjektief beleven en objectief leren zien van kleur als weg naar de kunst.</i> Baarn, Nederland: Cantecleer. pp. 135"
+				},
+				{
+					"content" : "Tyner, J. A. (2015). Persuasive Cartography. In M. Monmonier (Red.), <i>The History of Cartography</i> (Vol. 6, part 2) (pp. 1087-1095). Chicago & London: The University of Chicago Press."
+				},
+				{
+					"content" : "Heijden, H.A.M. (2006). <i>Leo Belgicus: An Illustrated and Annotated Carto-Bibliography.</i> Alphen aan den Rijn: Canaletto."
+				},
+				{
+					"content" : "Heijden, H.A.M. (2006). <i>Leo Belgicus: An Illustrated and Annotated Carto-Bibliography.</i> Alphen aan den Rijn: Canaletto."
+				},
+				{
+					"content" : "Meurer, P. (2008). Europa Regina. 16th century maps of Europe in the form of a queen. <i>Belgeo, Revue belge de geographie.</i> 3-4, 355-370."
+				},
+				{
+					"content" : "Meurer, P. (2008). Europa Regina. 16th century maps of Europe in the form of a queen. <i>Belgeo, Revue belge de geographie.</i> 3-4, 355-370."
+				},
+				{
+					"content" : "Meurer, P. (2008). Europa Regina. 16th century maps of Europe in the form of a queen. <i>Belgeo, Revue belge de geographie.</i> 3-4, 355-370."
+				},
+				{
+					"content" : "Bugayevskiy, L. M., & Snyder P. J. (1995). <i>Map Projections: A Reference Manual.</i> Londen, Verenigd Koninkrijk: Taylor & Francis Ltd. pp. 49"
+				},
+				{
+					"content" : "PJ Mode Collection. (2015, 25 augustus). <i>Angling in Troubled Waters.</i> Cornell University Library, Digital Collections. Geraadpleegd op 30 september 2017, van <u>https://digital.library.cornell.edu/catalog/ss:3293834</u>"
+				},
+				{
+					"content" : "PJ Mode Collection. (2015, 25 augustus). <i>Angling in Troubled Waters.</i> Cornell University Library, Digital Collections. Geraadpleegd op 30 september 2017, van <u>https://digital.library.cornell.edu/catalog/ss:3293834</u>"
+				},
+				{
+					"content" : "PJ Mode Collection. (2015, 25 augustus). <i>American Bases In the World.</i> Cornell University Library, Digital Collections. Geraadpleegd op 30 september 2017, van <u>https://digital.library.cornell.edu/catalog/ss:3293908</u>"
+				},
+				{
+					"content" : "Monmonier, M. (1996). <i>How to Lie with Maps.</i> Chicago & London: The University of Chicago Press. pp. 107-108"
+				},
+				{
+					"content" : "Ajarai, H. (2010, 8 juni). Waar komen de kleuren in de politiek vandaan?. Geraadpleegd op 29 december 2017, van <u>https://www.nrc.nl/nieuws/2010/06/08/waar-komen-de-kleuren-in-de-politiek-vandaan-11902425-a31664</u>"
+				},
+				{
+					"content" : "Monmonier, M. (1996). <i>How to Lie with Maps.</i> Chicago & London: The University of Chicago Press. pp. 88 "
+				},
+				{
+					"content" : "Cairo, H. (2006) <i>Portugal is not a Small Country: Maps and Propaganda in the Salazar Regime.</i> Geopolitics, 11:3, pp. 379, doi: 10.1080/14650040600767867"
+				},
+				{
+					"content" : "Cairo, H. (2006) <i>Portugal is not a Small Country: Maps and Propaganda in the Salazar Regime.</i> Geopolitics, 11:3, pp. 379, doi: 10.1080/14650040600767867"
+				},
+				{
+					"content" : "PJ Mode Collection. (2017, 14 april). <i>Israel and the Arab States.</i> Cornell University Library, Digital Collections. Geraadpleegd van <u>https://digital.library.cornell.edu/catalog/ss:19343649</u>"
+				},
+				{
+					"content" : "PJ Mode Collection. (2017, 14 april). <i>Israel and the Arab States.</i> Cornell University Library, Digital Collections. Geraadpleegd van <u>https://digital.library.cornell.edu/catalog/ss:19343649</u>"
+				},
+				{
+					"content" : "PJ Mode Collection. (2017, 14 april). <i>Israel and the Arab States.</i> Cornell University Library, Digital Collections. Geraadpleegd van <u>https://digital.library.cornell.edu/catalog/ss:19343649</u>"
+				},
+				{
+					"content" : "PJ Mode Collection. (2017, 14 april). <i>Israel and the Arab States.</i> Cornell University Library, Digital Collections. Geraadpleegd van <u>https://digital.library.cornell.edu/catalog/ss:19343649</u>"
+				},
+				{
+					"content" : "De Bortoli, M., & Maroto Bortoli, J. (2001). Colours Across Cultures: Translating Colours in Interactive Marketing Communications. <i>Global Propaganda.</i> University of Paisley. pp. 15, 18, 25"
+				},
+				{
+					"content" : "PJ Mode Collection. (2015, 25 augustus). <i>Palestinian Loss of Land.</i> Cornell University Library, Digital Collections. Geraadpleegd van <u>https://digital.library.cornell.edu/catalog/ss:3293951</u>"
+				},
+				{
+					"content" : "St. Clair, K. (2016, 14 november). The secret history of colour in black and white. Geraadpleegd op 23 oktober 2017, van <u>https://www.theguardian.com/lifeandstyle/2016/nov/14/the-secret-history-of-colour-in-black-and-white</u>"
+				},
+				{
+					"content" : "De Bortoli, M., & Maroto Bortoli, J. (2001). Colours Across Cultures: Translating Colours in Interactive Marketing Communications. <i>Global Propaganda.</i> University of Paisley. pp. 11"
+				},
+				{
+					"content" : "Dixon, R. (2015, 26 juni). Why Green just can't be trusted. Geraadpleegd op 9 september 2017, van <u>https://www.theguardian.com/lifeandstyle/2015/jun/26/why-green-just-cant-be-trusted</u>"
+				},
+				{
+					"content" : "De Bortoli, M., & Maroto Bortoli, J. (2001). Colours Across Cultures: Translating Colours in Interactive Marketing Communications. <i>Global Propaganda.</i> University of Paisley. pp. 11"
+				},
+				{
+					"content" : "Itten, J. (2000). <i>Kunst en Kleur: Een kleurenleer over het subjektief beleven en objectief leren zien van kleur als weg naar de kunst.</i> Baarn, Nederland: Cantecleer. pp. 135"
+				},
+				{
+					"content" : "Itten, J. (2000). <i>Kunst en Kleur: Een kleurenleer over het subjektief beleven en objectief leren zien van kleur als weg naar de kunst.</i> Baarn, Nederland: Cantecleer. pp. 19"
+				},
+				{
+					"content" : "Shirley, Rodney W. (1983). <i>The Mapping of the World: Early Printed World Maps 1472-1700.</i> London: Holland Press. pp. 477"
+				},
+				{
+					"content" : "Edson, E. (1997). <i>Mapping Time and Space: how medieval mapmakers viewed their world.</i> The British Library, London"
+				},
+				{
+					"content" : "J.B. Harley & Woodward, D. (1985). The History of Cartography, Vol. 1 Chapter 18. pp. 286-370. <i>Medieval Mappaemundi.</i> pp. 518-519"
+				},
+				{
+					"content" : "Tyner, J. A. (2015). Persuasive Cartography. In M. Monmonier (Red.), <i>The History of Cartography</i> (Vol. 6, part 2) (pp. 1087-1095). Chicago & London: The University of Chicago Press."
+				},
+				{
+					"content" : "Evelyn Edson (1997). <i>Mapping Time and Space: how medieval mapmakers viewed their world.</i> Published by The British Library, London. pp. 9"
+				},
+				{
+					"content" : "Wesley A. Brown (2000). <i>The World Image Expressed in the Rudimentum Novitiorum.</i> Philip Lee Phillips Society Occasional Paper Series (No. 3). pp. 6-7"
+				},
+				{
+					"content" : "Campbell, B. (1987). <i>The Earliest Printed Maps 1472-1500.</i> London: The British Library. pp. 1-2"
+				},
+				{
+					"content" : "Van Linge, T. [@ThomasVLinge]. (2013, januari). 21 yr. passionate about freedom, democracy, human rights and the preservation of our wildlife. reporting on (and mapping out) wars, uprisings and conservation [profiel informatie]. Geraadpleegd van <u>https://twitter.com/ThomasVLinge</u>"
+				},
+				{
+					"content" : "Hofman, L., & de Weerd, R. (2015, 10 juli). Waarom je de macht van Islamitische Staat nooit in één kaart kunt vatten. Geraadpleegd op 25 november 2017, van <u>https://decorrespondent.nl/3067/waarom-je-de-macht-van-islamitische-staat-nooit-in-een-kaart-kunt-vatten/339025036009-a7fd4731</u>"
+				},
+				{
+					"content" : "Hofman, L., & de Weerd, R. (2015, 10 juli). Waarom je de macht van Islamitische Staat nooit in één kaart kunt vatten. Geraadpleegd op 25 november 2017, van <u>https://decorrespondent.nl/3067/waarom-je-de-macht-van-islamitische-staat-nooit-in-een-kaart-kunt-vatten/339025036009-a7fd4731</u>"
+				},
+				{
+					"content" : "Hofman, L., & de Weerd, R. (2015, 10 juli). Waarom je de macht van Islamitische Staat nooit in één kaart kunt vatten. Geraadpleegd op 25 november 2017, van <u>https://decorrespondent.nl/3067/waarom-je-de-macht-van-islamitische-staat-nooit-in-een-kaart-kunt-vatten/339025036009-a7fd4731</u>"
+				},
+				{
+					"content" : "Monmonier, M. (1996). <i>How to Lie with Maps.</i> Chicago & London: The University of Chicago Press. pp. 145"
+				},
+				{
+					"content" : "Mondiaal. (2015). <i>Groot woordenboek van de Nederlandse taal, i-q</i> (15e ed.). Utrecht, Nederland: Van Dale."
+				},
+				{
+					"content" : "Hofman, L., & de Weerd, R. (2015, 10 juli). Waarom je de macht van Islamitische Staat nooit in één kaart kunt vatten. Geraadpleegd op 25 november 2017, van <u>https://decorrespondent.nl/3067/waarom-je-de-macht-van-islamitische-staat-nooit-in-een-kaart-kunt-vatten/339025036009-a7fd4731</u>"
+				},
+				{
+					"content" : "PJ Mode Collection. (2017, 14 april). <i>Nuclear Poison Gas Cloud.</i> Cornell University Library, Digital Collections. Geraadpleegd van <u>https://digital.library.cornell.edu/catalog/ss:19343513</u>"
+				},
+				{
+					"content" : "l b. (2017, 27 juni). <i>William Bunge on the Nuclear War Atlas (1983)</i> [Vimeo]. Geraadpleegd op 25 november 2017, van <u>https://vimeo.com/223383681</u>"
+				},
+				{
+					"content" : "PJ Mode Collection. (2017, 14 april). <i>Nuclear Poison Gas Cloud.</i> Cornell University Library, Digital Collections. Geraadpleegd van <u>https://digital.library.cornell.edu/catalog/ss:19343513</u>"
+				},
+				{
+					"content" : "l b. (2017, 27 juni). <i>William Bunge on the Nuclear War Atlas (1983)</i> [Vimeo]. Geraadpleegd op 25 november 2017, van <u>https://vimeo.com/223383681</u>"
+				},
+				{
+					"content" : "Monmonier, M. (1996). <i>How to Lie with Maps.</i> Chicago & London: The University of Chicago Press. pp. 115-117"
+				},
+				{
+					"content" : "Young, L. (2017, 6 februari). The Powerful 1940 Map That Depicts America as a Nation of Immigrants. Geraadpleegd op 25 november 2017, van <u>https://www.atlasobscura.com/articles/map-monday-america-a-nation-of-one-people-from-many-countries</u>"
+				},
+				{
+					"content" : "Young, L. (2017, 6 februari). The Powerful 1940 Map That Depicts America as a Nation of Immigrants. Geraadpleegd op 25 november 2017, van <u>https://www.atlasobscura.com/articles/map-monday-america-a-nation-of-one-people-from-many-countries</u>"
+				},
+				{
+					"content" : "Lind, D. (2017, 7 februari). 37 maps that explain how America is a nation of immigrants. Geraadpleegd op 25 november 2017, van <u>https://www.vox.com/2015/1/12/7474897/immigration-america-maps</u>"
+				},
+				{
+					"content" : "Young, L. (2017, 6 februari). The Powerful 1940 Map That Depicts America as a Nation of Immigrants. Geraadpleegd op 25 november 2017, van <u>https://www.atlasobscura.com/articles/map-monday-america-a-nation-of-one-people-from-many-countries</u>"
+				},
+				{
+					"content" : "PJ Mode Collection. (2017, 14 april). <i>The Silver Dog With the Golden Tail.</i> Cornell University Library, Digital Collections. Geraadpleegd van <u>https://digital.library.cornell.edu/catalog/ss:19343394</u>"
+				},
+				{
+					"content" : "PJ Mode Collection. (2017, 14 april). <i>The Silver Dog With the Golden Tail.</i> Cornell University Library, Digital Collections. Geraadpleegd van <u>https://digital.library.cornell.edu/catalog/ss:19343394</u>"
+				},
+				{
+					"content" : "Monmonier, M. (1996). <i>How to Lie with Maps.</i> Chicago & London: The University of Chicago Press. pp. 90-92"
+				},
+				{
+					"content" : "Monmonier, M. (1996). <i>How to Lie with Maps.</i> Chicago & London: The University of Chicago Press. pp. 58-61"
+				},
+				{
+					"content" : "Monmonier, M. (1996). <i>How to Lie with Maps.</i> Chicago & London: The University of Chicago Press. pp. 58-61"
+				},
+				{
+					"content" : "Malcolm, G. L. (1998). Traditional Cartography in the Americas. In Woodward D., & Malcolm, G. L. (Red.), <i>The History of Cartography</i> (Vol. 2, boek 3) (pp. 168-169). Chicago & London: University of Chicago Press."
+				},
+				{
+					"content" : "Finney, B. (1998). Nautical Cartography and Traditional Navigation in Oceania. In Woodward D., & Malcolm, G. L. (Red.), <i>The History of Cartography</i> (Vol. 2, boek 3) (pp. 443-444). Chicago & London: University of Chicago Press."
+				},
+				{
+					"content" : "Köbben, B., & van Eck, J. W. (2014, 1 juni). Cartografie ontketend. Geraadpleegd op 1 december 2017, van <u>https://geografie.nl/artikel/cartografie-ontketend</u>"
+				},
+				{
+					"content" : "Dekkers, G. (2015, oktober). Kaarten van de firma Blaeu. Historisch Nieuwsblad. Geraadpleegd op 1 december 2017, van <u>https://www.historischnieuwsblad.nl/nl/artikel/44081/kaarten-van-de-firma-blaeu.html</u>"
+				},
+				{
+					"content" : "Köbben, B., & van Eck, J. W. (2014, 1 juni). Cartografie ontketend. Geraadpleegd op 1 december 2017, van <u>https://geografie.nl/artikel/cartografie-ontketend</u>"
+				},
+				{
+					"content" : "Velho Diogo, G. (2016, 7 oktober). Mapping technologies. Google Earth, Surveillance, and the Power of Digital Cartography. Institute of Network Cultures. Geraadpleegd op 7 december 2017, van <u>http://networkcultures.org/longform/2016/10/07/google-earth-surveillance-and-the-power-of-digital-cartography/</u>"
+				},
+				{
+					"content" : "Caryl-Sue (2017, 21 juni). GIS (geographic information system). [National Geographic Society]. Geraadpleegd op 6 december 2017, van <u>https://www.nationalgeographic.org/encyclopedia/geographic-information-system-gis/</u>"
+				},
+				{
+					"content" : "Velho Diogo, G. (2016, 7 oktober). Mapping technologies. Google Earth, Surveillance, and the Power of Digital Cartography. Institute of Network Cultures. Geraadpleegd op 7 december 2017, van <u>http://networkcultures.org/longform/2016/10/07/google-earth-surveillance-and-the-power-of-digital-cartography/</u>"
+				},
+				{
+					"content" : "Velho Diogo, G. (2016, 7 oktober). Mapping technologies. Google Earth, Surveillance, and the Power of Digital Cartography. Institute of Network Cultures. Geraadpleegd op 7 december 2017, van <u>http://networkcultures.org/longform/2016/10/07/google-earth-surveillance-and-the-power-of-digital-cartography/</u>"
+				},
+				{
+					"content" : "<i>“Unburdened by archival responsibility, individual maps can be more pictorial”.</i></br>Wilford, J. N. (2001). <i>The mapmakers.</i> New York, Vintage Books. pp. 417."
+				},
+				{
+					"content" : "Cartografie. (2015). <i>Groot woordenboek van de Nederlandse taal, a-h</i> (15e ed.). Utrecht: Van Dale."
+				},
+				{
+					"content" : "Cartograaf. (2015). <i>Groot woordenboek van de Nederlandse taal, a-h</i> (15e ed.). Utrecht: Van Dale."
+				},
+				{
+					"content" : "Geografie. (2015). <i>Groot woordenboek van de Nederlandse taal, a-h</i> (15e ed.). Utrecht: Van Dale."
+				},
+				{
+					"content" : "Geograaf. (2015). <i>Groot woordenboek van de Nederlandse taal, a-h</i> (15e ed.). Utrecht: Van Dale."
+				},
+				{
+					"content" : "Mamadouh, V. (2015, 1 september). Inheemse wereld in kaart gebracht. Geraadpleegd op 1 december 2017, van <u>https://geografie.nl/artikel/inheemse-wereld-kaart-gebracht</u>"
+				},
+				{
+					"content" : "Harley, J. B. (2002). <i>The New Nature of Maps, Essays in the History of Cartography.</i> Baltimore, Maryland: The Johns Hopkins University Press. pp. 35"
+				},
+				{
+					"content" : "Abrams, J., & Hall, P. (2006). Where/Abouts. In Abrams, J., & Hall, P. (Red.), <i>Else/Where: Mapping New Cartographies of Networks and Territories.</i> (pp. 12-13). Minneapolis, Minnesota, United States: University of Minnesota Design Institute."
+				},
+				{
+					"content" : "<i>“First, the actual business of mapmaking, of collecting spatial data and mapping it out, is passing out of the hands of the experts. The ability to make a map, even a stunning interactive 3D map, is now available to anyone with a home computer and an internet connection.”</i></br>Crampton W. J., & Krygier J. (2006). <i>An Introduction to Critical Cartography.</i> ACME: An International E-Journal for Critical Geographies, 4 (1), pp. 11-33."
+				},
+				{
+					"content" : "Abrams, J., & Hall, P. (2006). Where/Abouts. In Abrams, J., & Hall, P. (Red.), <i>Else/Where: Mapping New Cartographies of Networks and Territories.</i> (pp. 12-13). Minneapolis, Minnesota, United States: University of Minnesota Design Institute."
+				},
+				{
+					"content" : "Crampton W. J., & Krygier J. (2006). <i>An Introduction to Critical Cartography.</i> ACME: An International E-Journal for Critical Geographies, 4 (1), pp. 2."
+				},
+				{
+					"content" : "Hofman, L., & de Weerd, R. (2015, 10 juli). Waarom je de macht van Islamitische Staat nooit in één kaart kunt vatten. Geraadpleegd op 25 november 2017, van <u>https://decorrespondent.nl/3067/waarom-je-de-macht-van-islamitische-staat-nooit-in-een-kaart-kunt-vatten/339025036009-a7fd4731</u>"
+				},
+				{
+					"content" : "Köbben B., & van Eck, J. W. (2013). Cartografie ontketend. ITC-Universiteit Twente & Esri Nederland. Geraadpleegd op 2 december 2017, van <u>http://www.geography.nl/fileadmin/geografie/Geografie_PDF/1406_juni/</br>140607_kobben_cartografie.pdf</u>. pp. 3"
+				},
+				{
+					"content" : "Koninklijke Academie van Beeldende Kunsten. (2017). <i>Bachelor Grafisch Ontwerpen.</i> Geraadpleegd op 9 december 2017, van <u>https://www.kabk.nl/opleidingen/bachelor/grafisch-ontwerpen</u>"
+				},
+				{
+					"content" : "Studio Joost Grootens. (n.d.). About [verklaring over studio]. Geraadpleegd op 1 januari 2018, van <u>http://www.joostgrootens.nl/#monographs</u>"
+				},
+				{
+					"content" : "Themajiks. (n.d.). I will draw a vector map in illustrator. [Fiverr dienst aanbod]. Geraadpleegd op 7 december 2017, van <u>https://www.fiverr.com/themajiks/</u>"
+				},
+				{
+					"content" : "Lorusso, S. (2017, 27 februari). Entreprecariat. What Design Can’t Do — Graphic Design between Automation, Relativism, Élite and Cognitariat. Institute of Network Cultures. Geraadpleegd op 6 december 2017, van <u>http://networkcultures.org/entreprecariat/what-design-cant-do/</u>"
+				},
+				{
+					"content" : "Lorusso, S. (2017, 20 september). Entreprecariat. Designer as Activist as Bullshitter as Barista. Institute of Network Cultures. Geraadpleegd op 7 december 2017, van <u>http://networkcultures.org/entreprecariat/designer-as-activist-as-bullshitter-as-barista/</u>"
+				},
+				{
+					"content" : "Boria, E. (2013, 12 december). Geographers and Maps: a Relationship in Crisis. <i>L’Espace Politique,</i> (nr 21). Geraadpleegd op 04 oktober 2017, van <u>http://journals.openedition.org/espacepolitique/2802 doi: 10.4000/espacepolitique.2802</u>"
+				},
+				{
+					"content" : "Williams, Garrath, 1. Theoretical reason: reason’s cognitive role and limitations, <i>The Stanford Encyclopedia of Philosophy</i> (Winter 2017 Edition), Edward N. Zalta (ed.). Geraadpleegd op 23 december 2017, van <u>https://plato.stanford.edu/archives/win2017/entries/kant-reason/</u>"
+				},
+				{
+					"content" : "Crampton W. J., & Krygier J. (2006). <i>An Introduction to Critical Cartography.</i> ACME: An International E-Journal for Critical Geographies, 4 (1), pp. 13."
+				},
+				{
+					"content" : "<i>“an attitude, an ethos, a philosophical life in which the critique of what we are is at the one and the same time the historical analysis of the limits that are imposed on us and an experiment with the possibility of going beyond them”</i></br>Crampton W. J., & Krygier J. (2006). <i>An Introduction to Critical Cartography.</i> ACME: An International E-Journal for Critical Geographies, 4 (1), pp. 14."
+				},
+				{
+					"content" : "<i>“Its purpose is to understand and suggest alternatives to the categories of knowledge that we use. (…) Critique does not seek to escape from categories but rather to show how they came to be, and what other possibilities there are.”</i></br>Crampton W. J., & Krygier J. (2006). <i>An Introduction to Critical Cartography.</i> ACME: An International E-Journal for Critical Geographies, 4 (1), pp. 13."
+				},
+				{
+					"content" : "Crampton W. J., & Krygier J. (2006). <i>An Introduction to Critical Cartography.</i> ACME: An International E-Journal for Critical Geographies, 4 (1), pp. 13."
+				},
+				{
+					"content" : "<i>“In contrast to the ‘fundamental visual disciplines’ such as philosophy, psychology, cognition studies, communications science and art history, which explicitly study the typology, use and functions of images, geography has so far produced practically no systematic attempts to develop a visual theory. Geography is primarily a discipline that uses images”</i></br>Schlottmann, A., & Miggelbrink, J. (2009), Visual geographies – an editorial, <i>Social Geography,</i> (4), pp. 1"
+				},
+				{
+					"content" : "Hofman, L., & de Weerd, R. (2015, 10 juli). Waarom je de macht van Islamitische Staat nooit in één kaart kunt vatten. Geraadpleegd op 14 december 2017, van <u>https://decorrespondent.nl/3067/waarom-je-de-macht-van-islamitische-staat-nooit-in-een-kaart-kunt-vatten/339025036009-a7fd4731</u>"
+				},
+				{
+					"content" : "Shoshan, M. (2010). <i>Atlas of the conflict : Israel-Palestine.</i> Rotterdam, Nederland: 010 Publishers. pp. 10-11"
+				},
+				{
+					"content" : "Untold Stories & Datagraver [Stemmingmakerij]. (2017). 2017. Stemmingmakerij. Geraadpleegd op 26 december 2017, van <u>http://www.stemmingmakerij.net/</u>"
+				},
+				{
+					"content" : "Hofman, L., & de Weerd, R. (2015, 10 juli). Waarom je de macht van Islamitische Staat nooit in één kaart kunt vatten. Geraadpleegd op 14 december 2017, van <u>https://decorrespondent.nl/3067/waarom-je-de-macht-van-islamitische-staat-nooit-in-een-kaart-kunt-vatten/339025036009-a7fd4731</u>"
+				},
+				{
+					"content" : "Milnor, J. (1969). A Problem in Cartography. <i>The American Mathematical Monthly,</i> Vol.76(10), pp.1101-1112. doi: 10.2307/2317182"
+				},
+				{
+					"content" : "Bugayevskiy, L. M., & Snyder P. J. (1995). <i>Map Projections: A Reference Manual.</i> Londen, Verenigd Koninkrijk: Taylor & Francis Ltd. pp. 49-63"
+				},
+				{
+					"content" : "Turnbull, D., & Watson, H. (1993). <i>Maps are Territories, Science is an Atlas.</i> Chicago: University of Chicago Press. pp. 6-7. Geraadpleegd op 29 november 2017, van <u>http://www.labster8.net/wp-content/uploads/2013/08/Maps-Are-Territories-Part1.pdf</u>"
+				},
+				{
+					"content" : "Tyner, J. A. (2015). Persuasive Cartography. In M. Monmonier (Red.), <i>The History of Cartography</i> (Vol. 6, part 2) (pp. 1087-1095). Chicago & London: The University of Chicago Press."
+				},
+				{
+					"content" : "Walters, J. (2017, 23 maart). Boston public schools map switch aims to amend 500 years of distortion. Geraadpleegd op 29 augustus 2017, van <u>https://www.theguardian.com/education/2017/mar/19/boston-public-schools-world-map-mercator-peters-projection</u>"
+				},
+				{
+					"content" : "Sriskandarajah, D. (2003, juli). Long Underwear on a Line? The Peters Projection and Thirty Years of Carto-controversy. <i>Geography,</i> Vol. 88, No. 3, pp. 236-244. Geographical Association. pp. 237"
+				},
+				{
+					"content" : "Bugayevskiy, L. M., & Snyder P. J. (1995). <i>Map Projections: A Reference Manual.</i> Londen, Verenigd Koninkrijk: Taylor & Francis Ltd. pp. 89-100"
+				},
+				{
+					"content" : "Bugayevskiy, L. M., & Snyder P. J. (1995). <i>Map Projections: A Reference Manual.</i> Londen, Verenigd Koninkrijk: Taylor & Francis Ltd. pp. 94-95"
+				},
+				{
+					"content" : "Resources Inventory Committee. (1998, januari). <i>Map Projection Standard.</i> Province of British Columbia: Resources Inventory Committee. Geraadpleegd op 14 december 2017, via <u>https://www.for.gov.bc.ca/hts/risc/pubs/other/mappro/map.htm#1</u>"
+				},
+				{
+					"content" : "Geomatics Yukon. (2011). Common Questions: What is Yukon Albers Equal Area projection? Why is it used?. Yukon, Canada: Geomatics Yukon. Geraadpleegd op 14 december 2017, van <u>http://www.geomaticsyukon.ca/info/common-questions</u>"
+				},
+				{
+					"content" : "Hooijberg, M. (1997). <i>Lambert’s Conformal Conical Projection.</i> In: Practical Geodesy. (pp. 133-134). Springer, Berlin, Heidelberg. doi: <u>https://doi.org/10.1007/978-3-642-60584-0_7</u>. Geraadpleegd op 15 december 2017, van <u>https://link.springer.com/chapter/10.1007/978-3-642-60584-0_7</u>"
+				},
+				{
+					"content" : "Adams, O. S. (1918) <i>Cartography: General Theory of the Lambert Conformal Conic Projection.</i> Washington: Government Printing Office. pp. 8. Geraadpleegd op 16 november 2017, van <u>https://babel.hathitrust.org/cgi/pt?id=uiug.30112068018263;view=1up;seq=8</u>"
+				},
+				{
+					"content" : "Bugayevskiy, L. M., & Snyder P. J. (1995). <i>Map Projections: A Reference Manual.</i> Londen, Verenigd Koninkrijk: Taylor & Francis Ltd. pp. 101"
+				},
+				{
+					"content" : "Pater, R. (2016). <i>The Politics of Design, A (Not So) Global Manual for Visual Communication.</i> Amsterdam, Nederland: BIS Publishers. pp. 155"
+				},
+				{
+					"content" : "Goldberg, D. M., & Gott J. R. (2007, 11 april). Flexion and Skewness in Map Projections of the Earth. Cartographica: <i>The International Journal for Geographic Information and Geovisualization,</i> 12/2007, Vol.42(4), pp.297-318. DOI: <u>http://dx.doi.org/10.3138/carto.42.4.297</u>"
+				},
+				{
+					"content" : "Goldberg, D. M., & Gott J. R. (2007, 11 april). Flexion and Skewness in Map Projections of the Earth. Cartographica: <i>The International Journal for Geographic Information and Geovisualization,</i> 12/2007, Vol.42(4), pp.297-318. DOI: <u>http://dx.doi.org/10.3138/carto.42.4.297</u>"
+				},
+				{
+					"content" : "Luce, H. R. (1943, 1 maart). R. Buckminster Fuller’s Dymaxation World. <i>LIFE magazine,</i> Vol. 14, (No. 9), pp. 41-42. Geraadpleegd op 5 december 2017, van <u>https://books.google.nl/</u>"
+				},
+
+			];
+
+			let footnotesDiv = document.getElementById("footnotes");
+
+			for(let i = 0; i < footnotes.length; i++){
+				footnotesDiv.innerHTML += "<p class='bibliography'><span id='footnote_"+(i+1)+"'><span class='footnote'> "+ (i+1) + "</span>" +" "+footnotes[i].content+"</span></p>";
+			}
+
+		    let footnotesInText = document.getElementsByClassName("footnote");
+
+		    for(let i = 0; i < footnotesInText.length; i++){
+				footnotesInText[i].innerHTML = "<a href='#footnote_"+(i+1)+"'>"+ (i+1) +"</a>";
+		    }
+			
+
+		    // beginnen bij de laatste, eindige bei de eerstah
+
+		    // Leeswijzer
+			// Inleiding
+			// Vooringenomen kaarten
+			// Soorten cartografen
+			// Critique
+			// Conclusie
+			// Bijlage
+			// Bibliografie
+
+			$(window).scroll(function() {
+			    if (!checkVisible($('#bibliography'))) {
+			        $('#chapterTitle').html("Bibliografie");
+			    } 
+
+			    else if(!checkVisible($('#bijlage'))){
+			        $('#chapterTitle').html("Bijlage");
+			    } 
+
+			    else if(!checkVisible($('#conclusie'))){
+			        $('#chapterTitle').html("Conclusie");
+			    }
+
+			    else if(!checkVisible($('#kritiekgeven'))){
+			        $('#chapterTitle').html("Critique");
+			    }
+
+			    else if(!checkVisible($('#soortencartografen'))){
+			        $('#chapterTitle').html("Soorten cartografen");
+			    }
+
+			    else if(!checkVisible($('#vooringenomencartografie'))){
+			        $('#chapterTitle').html("Vooringenomen Kaarten");
+			    }
+			    
+			    else if(!checkVisible($('#inleiding'))){
+			        $('#chapterTitle').html("Inleiding");
+			    }
+			    
+			    else if(!checkVisible($('#leeswijzer'))){
+			        $('#chapterTitle').html("Leeswijzer");
+			    }
+
+			    else if(!checkVisible($('#title'))){
+			        $('#chapterTitle').html("Vooringenomen Cartografie");
+			    }
+
+
+			    });
+
+			function checkVisible( elm, eval ) {
+			    eval = eval || "visible";
+			    var vpH = $(window).height(), // Viewport Height
+			        st = $(window).scrollTop(), // Scroll Top
+			        y = $(elm).offset().top,
+			        elementHeight = $(elm).height();
+			    
+			    if (eval == "visible") return ((y < (vpH + st)) && (y > (st - elementHeight)));
+			    if (eval == "above") return ((y < (vpH + st)));
+			}
+
+			// PSEUDOCODE eric
+
+			// VOOR VOETNOOT IN ALLE VOETNOTEN:
+			// NUMMER ++
+			// PAK VOETNOOT
+			// VERVANG VOETNOOT MET NUMMER EN LINK
+			// PLAK VOETNOOT IN BIBLIOGRAFIE
+			// PLAK LINK TERUG IN AAN BIBLIOGRAFIE GEPLAKTE VOETNOOT
+
 		</script>
 	</body>
 </html>
