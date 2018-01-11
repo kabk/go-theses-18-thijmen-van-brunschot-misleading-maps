@@ -343,14 +343,21 @@ div.content {
 	span.persoon {
 		margin-bottom:10px;
     	opacity: 0.4;
-		border-bottom: 1px solid black;
+    	color: #d9535a;
+		border-bottom: 1px solid #d9535a;
 		vertical-align: text-top;
 	}
 
 	span.kleur {
-		outline:solid 0.5px;
-		padding-right:3.5px;
-		padding-left:3.5px;	
+		  text-decoration: red underline dotted;
+	}
+
+	span.geloof {
+		color:#c6b5a0;
+	}
+
+	span.geloof:before {
+		content: '☁ ';
 	}
 
 	span.wegwijzer {
@@ -379,7 +386,7 @@ div.content {
 	}
 
 	span.city {
-		color:red;
+		color:#297ed4;
 	}
 /*▧ ▨ ▩ ◌ ❍ ⌖   
 */		span.city:before {
@@ -389,7 +396,7 @@ div.content {
 */		} 
 	
 	span.country {
-		color:#;
+		color:#7595ff;
 	}
 		span.country:before {
 			content: '⚐ ';
@@ -414,7 +421,7 @@ div.content {
 	}
 
 	span.projection {
-		color:brown;
+		color:#c36363;
 	}
 		span.projection:before {
 			content: '▩ ';
@@ -442,22 +449,23 @@ div.content {
 	}
 
 	span.stelling {
-		color:;
+		color:red;
+		text-decoration: 0.5px underline;
+
 	}
 
 	.imageleft {
-	position: absolute;
-	left: 18vw;	
+		position: absolute;
+		left: 18vw;	
 	}
 
 	.textleft {
-	font-size: 0.55em;
-	position: absolute;
-	left: 1vw;
-	max-width: 15vw;
-	line-height: 1.32em;
-/*	hyphens:auto;
-*/	}
+		font-size: 0.55em;
+		position: absolute;
+		left: 1vw;
+		max-width: 15vw;
+		line-height: 1.32em;
+	}
 
 @media screen and (max-width: 750px) {      
     div.tableofcontent {
