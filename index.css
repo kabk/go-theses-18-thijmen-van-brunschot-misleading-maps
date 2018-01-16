@@ -503,7 +503,7 @@ div.content {
 @media print {
 	
 	body {
-			background-color: transparent;
+		background-color: transparent;
 	}
 
 	div.tableofcontent{ 
@@ -523,7 +523,7 @@ div.content {
 		display: visible;
 	}
 
-	h2,p { 
+	h2, h3, p { 
 		margin-left:+1.5cm;
 	}
 

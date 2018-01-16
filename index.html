@@ -47,7 +47,9 @@
 					<a class="headline" href="#4">↪4.Conclusie</a></br>
 					<a class="headline" href="#5">↪5.Bijlage</a></br>
 					
-					<a class="headline" href="#6">↪6.Bibliografie</a>
+					<a class="headline" href="#6">↪6.Bibliografie</a></br>
+					<a class="headline" href="#7">↪7.Legenda</a>
+
 				</p>
 			</div>
 
@@ -846,27 +848,25 @@ kaart, projection, regQuote, tegengeluid, argument, gebeurtenis, bedrijf -->
 
 
 
-<!-- 
-				<p>
-				<span class="gebleken">Er is gebleken dat...</span></br>
-				<span class="argument">Krachtige onderbouwing</span></br>
-				<span class="stelling">Stelt, beschrijft dat</span></br>			
-				<span class="tegengeluid">Tegengeluid, minder belangrijk maken</span></br>
-				<span class="regQuote">Quote</span></br>
-				<span class="praktisch">praktisch voorbeeld</span></br>
-
-				<span class="titlereference">Titel artikel/boek</span></br>
-				<span class="jaar">Datum, jaartal</span></br>
-				<span class="kaart">Kaart</span></br>
-				<span class="cartograaf">Cartograaf</span></br>
-				<span class="auteur">Auteur</span></br>
-				<span class="city">Stad</span></br>
-				<span class="country">Land</span></br>
-				<span class="projection">Projectie</span></br>
-				<span class="kleur">Kleur</span></br>
-				<span class="gebeurtenis">Gebeurtenis</span>
-				</p> -->
-
+				<h1><a id="legenda" name="7">legenda</a></h1>
+				</br></br></br></br>	
+					<p>
+						<span class="gebleken">er is gebleken dat</span></br>
+						<span class="argument">krachtige onderbouwing</span></br>
+						<span class="stelling">stelling</span></br>			
+						<span class="tegengeluid">tegengeluid</span></br>
+						<span class="regQuote">quote</span></br>
+						<span class="praktisch">praktisch</span></br>
+						<span class="titlereference">Titel artikel/boek</span></br>
+						<span class="jaar">Datum, jaartal</span></br>
+						<span class="kaart">Kaart</span></br>
+						<span class="cartograaf">Cartograaf</span></br>
+						<span class="city">Stad</span></br>
+						<span class="country">Land</span></br>
+						<span class="projection">Projectie</span></br>
+						<span class="kleur">Kleur</span></br>
+						<span class="gebeurtenis">Gebeurtenis</span>
+					</p>
 			</div>
 		</div>
 
@@ -1273,7 +1273,11 @@ kaart, projection, regQuote, tegengeluid, argument, gebeurtenis, bedrijf -->
 			// Bibliografie
 
 			$(window).scroll(function() {
-			    if (!checkVisible($('#bibliography'))) {
+			    if (!checkVisible($('#legenda'))) {
+			        $('#chapterTitle').html("Legenda");
+			    } 
+
+			    else if(!checkVisible($('#bibliography'))){
 			        $('#chapterTitle').html("Bibliografie");
 			    } 
 
